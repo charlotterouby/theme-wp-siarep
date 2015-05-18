@@ -99,7 +99,7 @@ textarea {
 
 div, li { border: solid 1px;}
 
-/* ------------ COULEURS ----------------------------------
+/* ------------------------------ COULEURS ----------------------------------
 gris : #968881          gris pastel : #E8E4E2
 orange : #ED9E10        orange pastel : #FCE8CC
 orange moyen : #EF7F3C
@@ -109,10 +109,10 @@ vert moyen : #81b15a
 vert foncé : #7fc07d
 bleu foncé : #4e4797
 bleu-vert : #3ebaca     bleu-vert paste : #e3f2f6
---------------------------------------------------------*/
+-----------------------------------------------------------------------------*/
 
 
-/* ----------------------------- TYPO -----------------------------------*/
+/* ----------------------------- TYPO ---------------------------------------*/
 @font-face {
     font-family: "Ubuntu";
     src: url('typoUbuntu/Ubuntu-L.ttf');
@@ -190,12 +190,15 @@ a:hover, a:active, a:visited {
 
 
     
+/*-------------------- MENU PRINCIPAL ---------------------------------*/
 
+#primary-menu{
+    display: inline-flex;
+}
 
-
-
-
-
+.sub-menu{
+    display:none;
+}
 
 
 /* ==========================================================================

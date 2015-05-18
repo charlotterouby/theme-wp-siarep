@@ -97,8 +97,6 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-div, li { border: solid 1px;}
-
 /* ------------------------------ COULEURS ----------------------------------
 gris : #968881          gris pastel : #E8E4E2
 orange : #ED9E10        orange pastel : #FCE8CC
@@ -200,6 +198,15 @@ a:hover, a:active, a:visited {
     display:none;
 }
 
+/*--------------------------Styles divers------------------------------------*/
+
+/*div, li { border: solid 1px;}*/
+
+.fond-couleur{
+    background-color: beige;
+    color : brown;
+    margin: 5px auto;
+}
 
 /* ==========================================================================
    Helper classes

@@ -37,7 +37,7 @@
                 <div id="menuPrincipal" class="push-5 grid-70">
                     <?php wp_nav_menu(array(
                         'sort_column'=>'menu_order',
-                        'theme_location'=>'secondaire')
+                        'theme_location'=>'principal')
                                      ); ?>
                 </div>
             </header>

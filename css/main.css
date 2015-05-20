@@ -275,7 +275,7 @@ ul#menuPrincipal .focus > ul,
 
 /*--------------------------Styles divers------------------------------------*/
 
-div, li { border: solid 1px;}
+/*div, li { border: solid 1px;}*/
 
 .fond-couleur{
     background-color: beige;

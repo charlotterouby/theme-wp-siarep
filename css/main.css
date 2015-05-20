@@ -143,33 +143,33 @@ body {
 
 h1, .h1 { 
     font-weight: bold;
-    font-size: 4em;
+    font-size: 2.5em;
     color: #ED9E10;}
 
 h2, .h2 {
     font-weight: bold;
-    font-size: 3em;
+    font-size: 1.75em;
     color: #9EC419 ;}
 
 h3, .h3 {
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #EF7F3C;}
 
 h4, .h4 {
     font-weight: bold;
-    font-size: 1.75em;
+    font-size: 1.33em;
     color: #EA5B0B;}
 
 h5, .h5 {
     font-weight: 500;
-    font-size: 1.5em;
+    font-size: 1.25em;
     font-style: italic;
     color: #968881;}
 
-h6, .h6, li~a{
+h6, .h6 {
     font-weight: 500;
-    font-size: 1.33em;
+    font-size: 1em;
     color: #968881;}
 
 p {
@@ -179,43 +179,103 @@ p {
 
 a {
     font-weight: normal;
-    font-size: 1em;
-    color: #4e4797;}
+    font-size: 0.75em;
+    color: #4e4797;
+    text-decoration: none;}
 
-a:hover, a:active, a:visited {
-    text-decoration: underline;
-    color: #3ebaca;}
+a:hover, a:active, a:visited {color: #3ebaca;}
 
 
     
 /*-------------------- MENU PRINCIPAL ---------------------------------*/
-#menuPrincipal ul{ 
-    list-style: none;
-    display:flex;
-    align-items: stretch;}
-
-#menuPrincipal a{
-    color: #968881;
-    font-weight: bold;}
-
-#menuPrincipal a:hover, #menuPrincipal a:active{
-    color: #4e4797;}
+#menu-navigation-principale-container{
+    margin:inherit;
+    padding: inherit;}
 
 #menuPrincipal li {
-    padding: 0.75%;}
+	display: inline-block;
+	position: relative;
+}
 
-#menuPrincipal ul ul { display: none;}
+#menuPrincipal a {
+	color: #968881;
+	display: block;
+	font-size: 1em;
+    font-weight: 500;
+	line-height: 1.5em;
+	padding: 1em;
+	text-decoration: none;
+}
 
-#menuPrincipal ul li:hover ul, #menuPrincipal ul li:active ul {
-    display: flex;
-    flex-direction: column;
-    /*position: absolute;
-    left: 0;
-    top: 3%;*/}
+#menuPrincipal a:hover > a,
+#menuPrincipal a:hover,
+#menuPrincipal a:focus > a,
+#menuPrincipal a:focus, 
+#menuPrincipal a:active > a,
+#menuPrincipal a:active {
+	background-color: #e3f2f6;
+	color: #4e4797;
+}
+
+#menuPrincipal .sub-menu,
+#menuPrincipal .children {
+	background-color: #9EC419;
+	border: 2px solid #fff;
+	border-top: 0;
+	padding: 0;
+    margin: inherit;
+	position: absolute;
+	left: -2px;
+	z-index: 99999;
+	height: 1px;
+	width: 1px;
+	overflow: hidden;
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+#menuPrincipal .sub-menu ul,
+#menuPrincipal .children ul {
+	border-left: 0;
+	left: 100%;
+	top: 0;
+}
+
+ul#menuPrincipal ul a,
+#menuPrincipal ul ul a {
+	color: #fff;
+	margin: 0;
+	width: 200px;
+}
+
+ul#menuPrincipal ul a:hover,
+#menuPrincipal ul ul a:hover,
+ul#menuPrincipal ul a:focus,
+#menuPrincipal ul ul a:focus {
+	background-color: #e3f2f6;
+}
+
+ul#menuPrincipal li:hover > ul,
+#menuPrincipal ul li:hover > ul,
+ul#menuPrincipal .focus > ul,
+#menuPrincipal .focus > ul {
+	clip: inherit;
+	overflow: inherit;
+	height: inherit;
+	width: inherit;
+}
+
+#menuPrincipal .current_page_item > a,
+#menuPrincipal .current_page_ancestor > a,
+#menuPrincipal .current-menu-item > a,
+#menuPrincipal .current-menu-ancestor > a {
+	color: #4e4797 ;
+	font-style: italic;
+}
+
 
 /*--------------------------Styles divers------------------------------------*/
 
-/*div, li { border: solid 1px;}*/
+div, li { border: solid 1px;}
 
 .fond-couleur{
     background-color: beige;

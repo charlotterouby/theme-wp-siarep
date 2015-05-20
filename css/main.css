@@ -189,14 +189,29 @@ a:hover, a:active, a:visited {
 
     
 /*-------------------- MENU PRINCIPAL ---------------------------------*/
+#menuPrincipal ul{ 
+    list-style: none;
+    display:flex;
+    align-items: stretch;}
 
-#primary-menu{
-    display: inline-flex;
-}
+#menuPrincipal a{
+    color: #968881;
+    font-weight: bold;}
 
-.sub-menu{
-    display:none;
-}
+#menuPrincipal a:hover, #menuPrincipal a:active{
+    color: #4e4797;}
+
+#menuPrincipal li {
+    padding: 0.75%;}
+
+#menuPrincipal ul ul { display: none;}
+
+#menuPrincipal ul li:hover ul, #menuPrincipal ul li:active ul {
+    display: flex;
+    flex-direction: column;
+    /*position: absolute;
+    left: 0;
+    top: 3%;*/}
 
 /*--------------------------Styles divers------------------------------------*/
 
@@ -208,6 +223,10 @@ a:hover, a:active, a:visited {
     margin: 5px auto;
 }
 
+.img-100 {width: 100%;}
+img{
+    width: inherit;
+    height: auto;}
 /* ==========================================================================
    Helper classes
    ========================================================================== */

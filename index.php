@@ -9,10 +9,10 @@
 
 <div id="articles" class="grid-66">
     <h1>Nos Références</h1>
-    <h2>Catégorie : <?php the_category('&bull;'); ?></h2>
+    <p>Catégorie : <?php the_category('&bull;'); ?></p>
     <?php if(have_posts()) : while(have_posts()):the_post(); ?>
-    <article class="resultatArticle grid-100 grid-parent">
-        <div class="grid-33 img-100"><?php the_post_thumbnail('thumbnail'); ?></div>
+    <article class="resultatArticle push-5 grid-95 grid-parent">
+        <div class="grid-33 grid-parent img-100"><?php the_post_thumbnail('thumbnail'); ?></div>
         <h3 class="grid-66"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
         <p class="grid-66"><?php the_excerpt(); ?></p>
         <p class="grid-33"><?php the_field('maitre_douvrage'); ?></p>
@@ -22,7 +22,7 @@
     
     <?php else : //si il n'y a pas d'articles correspondant, affiche le message d'erreur (404 error) ?>
     <article class="erreur grid-100">
-        <h3>Désolé mais aucune référence ne correspond à votre demande.</h3>
+        <p>Désolé mais aucune référence ne correspond à votre demande.</p>
     </article>
     <?php endif; ?>
 </div><!-- fin div#articles-->

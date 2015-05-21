@@ -32,12 +32,15 @@
         <![endif]-->
         
         <div id="conteneur" class="grid-container grid-parent"><!-- conteneur principal du site -->
-            <header class="grid-100">
-                <img src="img/logo.png" alt="logo" class="img-100 push-5 grid-15"/>
-                <div id="menuPrincipal" class="push-5 grid-70">
+            <header class="grid-100 grid-parent">
+                <div class="push-5 grid-15"><a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo" class="img-100"/></a></div>
+                <nav id="menuHeader" class="push-5 grid-80 grid-parent menuHorizontal">
                     <?php wp_nav_menu(array(
                         'sort_column'=>'menu_order',
                         'theme_location'=>'principal')
                                      ); ?>
-                </div>
+                </nav>
+               <!-- <div class="newsletter">
+                    <?php echo do_shortcode("[mc4wp_form]"); ?>
+                </div>-->
             </header>

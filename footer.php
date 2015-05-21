@@ -1,8 +1,8 @@
     <footer id="piedDePage">
         <p class="push-5 grid-45">
-            <?php bloginfo('name'); ?> - <?php the_author();?> &copy; Tous droits réservés, 2015.
+            <?php bloginfo('name'); ?> - Tous droits réservés, 2015.
         </p>
-        <div id="menuSecondaire" class="grid-45">
+        <div id="menuFooter" class="grid-45 menuHorizontal">
                     <?php wp_nav_menu(array(
                         'sort_column'=>'menu_order',
                         'theme_location'=>'secondaire')

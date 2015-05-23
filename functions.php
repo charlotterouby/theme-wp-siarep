@@ -14,7 +14,7 @@ if(function_exists('register_sidebar')) {
             'id'=>'premier',
             'name'=>'Premier emplacement',
             'description'=>'Premier emplacement des widgets',
-            'before_widget'=>'<div class="grid-100">',
+            'before_widget'=>'<div class="asideUn">',
             'after_widget'=>'</div>',
             'before_title'=>'<h2 class="titre-widget">',
             'after_title'=>'</h2>'
@@ -25,7 +25,7 @@ if(function_exists('register_sidebar')) {
             'id'=>'deuxieme',
             'name'=>'Deuxième emplacement',
             'description'=>'Deuxième emplacement des widgets',
-            'before_widget'=>'<div class="grid-100">',
+            'before_widget'=>'<div class="asideDeux">',
             'after_widget'=>'</div>',
             'before_title'=>'<h2 class="titre-widget">',
             'after_title'=>'</h2>'
@@ -45,5 +45,6 @@ if(function_exists('register_sidebar')) {
 }
 
 add_theme_support('post-thumbnails');
+
 
 ?>

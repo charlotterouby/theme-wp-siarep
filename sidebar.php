@@ -1,8 +1,4 @@
-<div id="colonneDroite" class="grid-33">
-    <div class="asideUn">
+<div id="colonneDroite" class="grid-33 grid-parent">
         <?php dynamic_sidebar('premier'); ?>
-    </div>
-    <div class="asideDeux">
         <?php dynamic_sidebar('deuxieme'); ?>
-    </div>
 </div>

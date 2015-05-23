@@ -20,6 +20,7 @@
         
         <?php wp_head(); ?> <!-- hook head pour wordpress. Ne pas retirer -->
     </head>
+
     <body <?php body_class(); ?>>
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
@@ -27,7 +28,12 @@
         
         <div id="conteneur" class="grid-container grid-parent"><!-- conteneur principal du site -->
             <header class=" grid-100 grid-parent">
-                <div class="grid-15"><a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo" class="img-100"/></a></div>
+                <div class="grid-15">
+                    <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                        <img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo"/>
+                    </a>
+                </div>
+                
                 <nav id="menuHeader" class="grid-65 grid-parent menuHorizontal">
                     <?php wp_nav_menu(array(
                         'sort_column'=>'menu_order',

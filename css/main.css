@@ -332,9 +332,12 @@ single.php / index.php / sidebar.php
 .asideDeux h2 { background-color: #3ebaca; }
 .asideDeux h3 { color: #3ebaca;}
 
-/*------------- listes d'extraits d'articles --------------*/
+/*------------- Google Maps --------------*/
 
-
+#acf-map {
+    width: 100%;
+    height: 30em;
+}
 
 
 

@@ -3,12 +3,16 @@
 <?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 <main class="articleSeul push-5 grid-90 grid-parent"> 
     <!---------------- bannière--------------------->
-    <div class="grid-100 grid-parent banner">
-        <img src="<?php the_field('img_banner'); ?>" alt="banner" class="img-100"/>
-        <h1 class="grid-100 titreArticle">
+    <?php if(get_field('img_banner')): ?>
+        <div class="grid-100 grid-parent banner">
+            <img src="<?php the_field('img_banner'); ?>" alt="banner" class="img-100"/>
+            <h1 class="titreArticle">
             <?php the_title(); ?>
         </h1>
-    </div>
+        </div>
+    <?php else: ?>
+        <h1 class="grid-66"><?php the_title(); ?></h1>
+    <?php endif; ?>
     
     <!----------- contenu principal----------------->
     <section class="grid-66 grid-parent">

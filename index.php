@@ -1,16 +1,22 @@
 <!-- cette page sert à afficher les recherches d'articles, càd modèles archive.php, search.php, et erreur 404  -->
-<?php get_header(); ?> <!--appel de l'en-tête-->
+<!--appel de l'en-tête-->
+<?php get_header(); ?> 
 
-<div id="indexSlider" class="push-5 grid-90 grid-parent">
+<!-- Bannière -->
+<div id="indexSlider" class="grid-100 grid-parent">
     <?php dynamic_sidebar('banner'); ?>
 </div>
 
+<!-- Partie principale de la page -->
 <main class="push-5 grid-90">
+    <!-- Lites des Articles -->
     <div id="articles" class="grid-66">
         <h1>Nos Références</h1>
         <p>Catégorie : <?php the_category(' &bull; '); ?></p>
     
-        <?php if(have_posts()) : while(have_posts()):the_post(); ?>
+        <?php if(have_posts()) : while(have_posts()):the_post();
+        //Si des articles correspondent à la recherche 
+        ?>
         <article class="resultatArticle grid-100 grid-parent">
             <div class="grid-33"><a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a></div>
             <div class="grid-66">
@@ -63,14 +69,17 @@
         </article>
         <?php endwhile; ?>
         <?php else : 
-        //si il n'y a pas d'articles correspondant, affiche le message d'erreur (404 error) ?>
+        //si il n'y a pas d'articles correspondant, affiche le message d'erreur (404 error) 
+        ?>
         <article class="erreur grid-100">
         <p>Désolé mais aucune référence ne correspond à votre demande.</p>
     </article>
         <?php endif; ?>
-    </div><!-- fin div#articles-->
+    </div><!-- fin div #articles-->
 
-    <?php get_sidebar(); ?> <!-- appel de la colonne latérale des widgets -->
+    <!-- appel de la colonne latérale des widgets -->
+    <?php get_sidebar(); ?> 
 </main>
 
-<?php get_footer(); ?> <!-- appel du pied de page-->
+<!-- appel du pied de page-->
+<?php get_footer(); ?> 

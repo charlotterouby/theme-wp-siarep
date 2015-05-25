@@ -26,22 +26,33 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         
-        <div id="conteneur" class="grid-container grid-parent"><!-- conteneur principal du site -->
+        <!-- conteneur principal du site -->
+        <div id="conteneur" class="grid-container grid-parent">
+            
+            <!--début header-->
             <header class=" grid-100 grid-parent">
-                <div class="grid-15">
-                    <a class="home-link" href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
+                
+                <!-- logo -->
+                <div id="logo" class="grid-20">
+                    <a class="home-link" 
+                       href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+                       title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" 
+                       rel="home">
                         <img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo"/>
                     </a>
                 </div>
                 
-                <nav id="menuHeader" class="grid-65 grid-parent menuHorizontal">
+                <!-- barre newsletter & boutons call to action -->
+                <div  id="newsletter" class="grid-80 grid-parent">
+                    <?php echo do_shortcode("[mc4wp_form]"); ?>
+                </div>
+                
+                <!-- menu de navigation principal -->
+                <nav id="menuHeader" class="grid-80 grid-parent menuHorizontal">
                     <?php wp_nav_menu(array(
                         'sort_column'=>'menu_order',
                         'theme_location'=>'principal')
                                      ); ?>
                     </nav>
-                   <div class="grid-20 grid-parent newsletter">
-                    <?php echo do_shortcode("[mc4wp_form]"); ?>
                 
-                </div>
             </header>

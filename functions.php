@@ -1,4 +1,5 @@
 <?php
+// Enregistrement des emplacements des menus
 if ( function_exists('register_nav_menus')) {
     register_nav_menus(
         array(
@@ -8,6 +9,7 @@ if ( function_exists('register_nav_menus')) {
     );
 }
 
+//Enregistrements des emplacements Widgets
 if(function_exists('register_sidebar')) {
     
     register_sidebar(
@@ -47,7 +49,30 @@ if(function_exists('register_sidebar')) {
     );
 }
 
+//Enregistrement utilisation des images à la Une
 add_theme_support('post-thumbnails');
+set_post_thumbnail_size(150, 150);
+
+// Filtre widget Nuage de tags
+function custom_tag_cloud($args) {
+  $args['unit'] = 'em';
+  $args['smallest'] = 0.9;
+  $args['largest'] = 2;
+  $args['order'] = 'RAND';
+  //$args['separator'] = ' &#9632; ';
+  return $args;
+}
+add_filter('widget_tag_cloud_args', 'custom_tag_cloud');
+
+// Rendre les images responsives en supprimant les attributs width et height
+function bbx_images( $html ) {
+    $html = preg_replace( '/(width|height)="\d*"\s/',"", $html ); 
+    return $html; 
+} 
+add_filter( 'post_thumbnail_html', 'bbx_images' ); 
+add_filter( 'image_send_to_editor', 'bbx_images'); 
+add_filter( 'wp_get_attachment_link', 'bbx_images');
 
 
+//Fin de la balise '<?php' du début de fichier
 ?>

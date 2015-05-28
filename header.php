@@ -13,7 +13,7 @@
                 &mdash; <?php wp_title("", true); ?>
             <?php endif; ?>
         </title>
-        <meta name="description" content="">
+        <link rel="shortcut icon" href="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/favicon.ico" alt="favicon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
@@ -54,5 +54,5 @@
                         'theme_location'=>'principal')
                                      ); ?>
                     </nav>
-                
+
             </header>

@@ -6,14 +6,18 @@
 <div id="indexSlider" class="grid-100 grid-parent">
     <?php dynamic_sidebar('banner'); ?>
 </div>
+<?php 
+        if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb('<p id="breadcrumbs" class="push-5 grid-90">','</p>');
+        } 
+    ?>
 
 <!-- Partie principale de la page -->
 <main class="push-5 grid-90">
     <!-- Lites des Articles -->
     <div id="articles" class="grid-66">
         <h1>Nos Références</h1>
-        <p>Catégorie : <?php the_category(' &bull; '); ?></p>
-    
+        
         <?php if(have_posts()) : while(have_posts()):the_post();
         //Si des articles correspondent à la recherche 
         ?>
@@ -29,11 +33,8 @@
                 <h6 class="grid-100">Maître d'ouvrage</h3>
                     
                 <?php if(get_field('logo_maitre_douvrage')): ?> 
-                <div class="grid-33 grid-parent">
+                <div class="grid-100">
                         <img src="<?php the_field('logo_maitre_douvrage'); ?>" alt="logo maitre d'ouvrage" class="img-100"/>
-                    </div>
-                <div class="grid-66">
-                            <?php the_field('maitre_douvrage'); ?>
                     </div>
                     
                 <?php else: ?>
@@ -50,11 +51,8 @@
                     <h6 class="grid-100">Maître d'oeuvre</h6>
                     
                     <?php if(get_field('logo_maitre_doeuvre')): ?>
-                    <div class="grid-33 grid-parent">
+                    <div class="grid-100">
                         <img src="<?php the_field('logo_maitre_doeuvre'); ?>" alt="logo maître d'oeuvre" class="img-100" />
-                    </div>
-                    <div class="grid-66">
-                        <?php the_field('maitre_doeuvre'); ?>
                     </div>
                     
                     <?php else: ?>

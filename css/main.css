@@ -97,7 +97,7 @@ textarea {
    Author's custom styles
    ============================================================= */
 
-/*{ border: solid 1px;}*/
+*{ border: solid 1px;}*/
 
 /*=============================================================
 STYLES GENERAUX
@@ -210,6 +210,7 @@ p a:hover, p a:visited {
     color: #3ebaca;
 }
 
+
 /*------------------------------------------------------------
 IMAGES & GALLERIES 
 ------------------------------------------------------------*/
@@ -229,13 +230,14 @@ IMAGES & GALLERIES
     float: right;
 }
 
+
 .gallery {
     width: 100%;
 }
 
 .gallery img {
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .gallery-icon {
@@ -280,9 +282,7 @@ styles menus navigation commun au Header et Footer
 	text-decoration: none;
 }
 
-
-.menuHorizontal .sub-menu,
-.menuHorizontal .children {
+.menuHorizontal .sub-menu {
 	background-color: #968881;
 	border-top: 0;
 	padding: 0;
@@ -391,7 +391,6 @@ Formulaire d'inscription à la newsletter
 }
 
 #newsletter label{
-    visibility: collapse;
     
     /*TYPO*/
     line-height: 1.5em;
@@ -415,7 +414,7 @@ Formulaire d'inscription à la newsletter
     border-radius: 3px;
 }
 
-#newsletter input#bouton {
+#newsletter input.bouton, .bouton {
     /*TYPO*/
     color: #fff;
     font-size: 1.3em;
@@ -430,6 +429,112 @@ Formulaire d'inscription à la newsletter
     border: outset 2px #ED9E10;
     border-radius: 3px;
 }
+
+/*------------------------------------------------------------
+Header mobile
+------------------------------------------------------------*/
+@media screen and (max-width:540px) { 
+    nav + * {
+		position: relative;
+	}
+
+	/* Theming opened nav */	
+	nav ul {		
+		
+		/* maximum height */
+		max-height: 25em;
+
+		/* translate with hardware acceleration */
+		-webkit-transform: translateZ(0); 
+		-ms-transform: translateZ(0);
+		        transform: translateZ(0);
+		-webkit-transition: max-height .4s;
+		        transition: max-height .4s;
+		will-change: max-height;
+
+		/* global styles */
+		margin: 0;
+		padding: 0;
+		list-style: none;
+	}
+	nav a {
+		display: block;
+		padding: 1.2rem;
+		color: #333;
+		background: #fff;
+		text-decoration: none;
+		margin-bottom: 2px;
+	}
+	nav a:hover, 
+	nav a:focus,
+	nav a:active
+	{
+		background: #eee;
+	}
+    
+	
+	/* Theming closed nav */
+	nav.is-closed ul {
+		max-height: 0;
+		overflow: hidden;
+	}
+
+	/* Global styling nav button */	
+	nav > button {
+		display: block;
+		position: absolute;
+			top: 2%; right: 5%;
+		z-index: 1;
+		height: 6%; 
+        width: 15%;
+		background-color: transparent;
+		background-image: -webkit-gradient(linear, left top, right top, from(#968881), to(#968881)), -webkit-gradient(linear, left top, right top, from(#968881), to(#968881)), -webkit-gradient(linear, left top, right top, from(#968881), to(#968881));
+		background-image: 
+            -webkit-linear-gradient(left, #968881 , #968881 ), 
+            -webkit-linear-gradient(left, #968881 , #968881 ), 
+            -webkit-linear-gradient(left, #968881 , #968881 );
+		background-image: linear-gradient(to right, #968881 , #968881 ),
+			linear-gradient(to right, #968881 , #968881 ),
+			linear-gradient(to right, #968881 , #968881 );
+		background-position: center top, center, center bottom;
+		background-repeat: no-repeat;
+		-webkit-background-size: 100% 20%;
+		        background-size: 100% 20%;
+		padding: 0;
+		outline: 0;
+		border: 0;
+		cursor: pointer;
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
+		-webkit-transition: .2s;
+		        transition: .2s;
+	}
+	
+	/*  Removing Firefox's dotted outline on button */	
+	nav > button::-moz-focus-inner {
+		border: 0;
+	}
+	
+	/* Theming opened nav button */	
+	nav:not(.is-closed) > button {
+		-webkit-transform: rotate(180deg) translateZ(0);
+		        transform: rotate(180deg) translateZ(0);
+		background-position: center, center, center;
+	}
+	
+	
+	/* Hide alternate text except from screen readers */
+	.visually-hidden {
+		position: absolute !important;
+		clip: rect(1px, 1px, 1px, 1px);
+		overflow: hidden;
+		height: 1px;
+		width: 1px;
+	}
+
+}
+
+
+
 
 /*=============================================================
 COLONNE LATERALE SIDEBAR.PHP & SINGLE.PHP
@@ -467,11 +572,13 @@ COLONNE LATERALE SIDEBAR.PHP & SINGLE.PHP
     margin : 0.2em auto;
 }
 
-.asideUn ul, .asideDeux ul {
+.asideUn ul, .asideDeux ul,
+.contenu-principal ul {
     margin : 2%;
 }
 
-.asideUn li, .asideDeux ul {
+.asideUn li, .asideDeux ul,
+.contenu-principal {
     list-style: square;
     list-style-position: inside;
     padding: 0 4%;
@@ -640,6 +747,16 @@ Fil d'Ariane / Breadcrumbs
 ------------------------------------------------------------*/
 #breadcrumbs {
     margin: 1% auto;
+    color: black;
+}
+
+#breadcrumbs a {
+    color : #4e4797;
+}
+
+#breadcrumbs a:hover {
+    color: #3ebaca;
+    text-decoration: underline;
 }
 
 /*=============================================================
@@ -653,8 +770,8 @@ PARTIE PRINCIPALE INDEX.PHP
 }
 
 .resultatArticle img{
-    max-width: 100%;
-    max-height: 100%;
+    width: 100%;
+    height: auto;
 }
 
 .resultatArticle h3 {
@@ -813,8 +930,7 @@ PARTIE PRINCIPALE INDEX.PHP
         text-shadow: none !important;
     }
 
-    a,
-    a:visited {
+    a, a:visited {
         text-decoration: underline;
     }
 
@@ -830,14 +946,11 @@ PARTIE PRINCIPALE INDEX.PHP
      * Don't show links for images, or javascript/internal links
      */
 
-    .ir a:after,
-    a[href^="javascript:"]:after,
-    a[href^="#"]:after {
+    .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
         content: "";
     }
 
-    pre,
-    blockquote {
+    pre,blockquote {
         border: 1px solid #999;
         page-break-inside: avoid;
     }
@@ -846,8 +959,7 @@ PARTIE PRINCIPALE INDEX.PHP
         display: table-header-group; /* h5bp.com/t */
     }
 
-    tr,
-    img {
+    tr, img {
         page-break-inside: avoid;
     }
 
@@ -859,15 +971,12 @@ PARTIE PRINCIPALE INDEX.PHP
         margin: 0.5cm;
     }
 
-    p,
-    h2,
-    h3 {
+    p, h2, h3 {
         orphans: 3;
         widows: 3;
     }
 
-    h2,
-    h3 {
+    h1, h2, h3 {
         page-break-after: avoid;
     }
 }

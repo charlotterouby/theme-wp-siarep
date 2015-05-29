@@ -29,11 +29,11 @@
         <!-- conteneur principal du site -->
         <div id="conteneur" class="grid-container grid-parent">
             
-            <!--début header-->
-            <header class=" grid-100 grid-parent">
+            <!--début header desktop-->
+            <header class="hide-on-mobile grid-100 grid-parent">
                 
                 <!-- logo -->
-                <div id="logo" class="grid-20">
+                <div id="logo" class="hide-on-mobile grid-20">
                     <a class="home-link" 
                        href="<?php echo esc_url( home_url( '/' ) ); ?>" 
                        title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" 
@@ -43,16 +43,72 @@
                 </div>
                 
                 <!-- barre newsletter & boutons call to action -->
-                <div  id="newsletter" class="grid-80 grid-parent">
+                <div  id="newsletter" class="hide-on-mobile grid-80 grid-parent">
                     <?php echo do_shortcode("[mc4wp_form]"); ?>
                 </div>
                 
                 <!-- menu de navigation principal -->
-                <nav id="menuHeader" class="grid-80 grid-parent menuHorizontal">
+                <nav id="menuHeader" class="hide-on-mobile grid-80 grid-parent menuHorizontal">
                     <?php wp_nav_menu(array(
                         'sort_column'=>'menu_order',
                         'theme_location'=>'principal')
                                      ); ?>
-                    </nav>
+                </nav>
 
             </header>
+            
+            <!--début header mobile -->
+            <header class="grid-100 grid-parent hide-on-desktop">
+                
+                <!-- logo -->
+                <div id="logo" class="mobile-grid-45">
+                    <a class="home-link" 
+                       href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+                       title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" 
+                       rel="home">
+                        <img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo"/>
+                    </a>
+                </div>
+                
+            
+                <!-- menu de navigation principal -->
+                <nav role="navigation" id="menuMobile" class="mobile-grid-100 grid-parent">
+                    <?php wp_nav_menu(array(
+                         'sort_column'=>'menu_order',
+                        'theme_location'=>'principal')
+                                     ); ?>
+                </nav>
+            </header>
+            
+            <!-- script pour le header mobile -->
+            <script type="text/javascript">
+    // config
+    var maxBreakpoint = 767; // maximum breakpoint
+    var targetID = 'menuMobile'; // target ID (must be present in DOM)
+    var triggerID = 'toggle-nav'; // trigger/button ID (will be created into targetID)
+    
+	// targeting navigation
+	var n = document.getElementById(targetID);
+        
+	// nav initially closed is JS enabled
+	n.classList.add('is-closed');
+	
+    // global navigation function
+	function navi() {
+		// when small screen, create a switch button, and toggle navigation class
+		if (window.matchMedia("(max-width:" + maxBreakpoint +"px)").matches && document.getElementById(triggerID)==undefined) {			
+			n.insertAdjacentHTML('afterBegin','<button id='+triggerID+' title="open/close navigation" class="grid-20"></button>');
+			t = document.getElementById(triggerID);  
+			t.onclick=function(){ n.classList.toggle('is-closed');}
+		}
+		// when big screen, delete switch button, and toggle navigation class
+        var minBreakpoint = maxBreakpoint + 1;
+		if (window.matchMedia("(min-width: " + minBreakpoint +"px)").matches && document.getElementById(triggerID)) {
+			document.getElementById(triggerID).outerHTML="";
+		}
+	}
+	navi();
+        
+	// when resize or orientation change, reload function
+	window.addEventListener('resize', navi);
+            </script>

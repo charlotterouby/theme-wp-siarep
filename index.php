@@ -6,13 +6,16 @@
 <div id="indexSlider" class="grid-100 grid-parent">
     <?php dynamic_sidebar('banner'); ?>
 </div>
-
+<?php 
+        if ( function_exists('yoast_breadcrumb') ) {
+            yoast_breadcrumb('<p id="breadcrumbs" class="push-5 grid-90">','</p>');
+        } 
+    ?>
 <!-- Partie principale de la page -->
 <main class="push-5 grid-90">
     <!-- Lites des Articles -->
     <div id="articles" class="grid-66">
         <h1>Nos Références</h1>
-        <p>Catégorie : <?php the_category(' &bull; '); ?></p>
     
         <?php if(have_posts()) : while(have_posts()):the_post();
         //Si des articles correspondent à la recherche 

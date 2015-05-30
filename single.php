@@ -18,7 +18,7 @@
     <!----------- contenu principal----------------->
     <section class="grid-66 grid-parent">
         <h1 class="grid-100"><?php the_title(); ?></h1>
-        <div class="contenu-principal grid-100"><?php the_content(); ?></div>
+        <div class="grid-100"><?php the_content(); ?></div>
     </section>
     
     <!-------------------- ASIDE-------------------->
@@ -137,7 +137,7 @@
 <?php endwhile; ?>
 <?php endif; ?>
 
-<!-- Script pour la Google Map --
+<!-- Script pour la Google Map -->
 <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
 <script type="text/javascript">
 (function($) {

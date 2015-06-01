@@ -1,0 +1,177 @@
+/*------------------------------------------------------------
+logo 
+------------------------------------------------------------*/
+header img{ 
+    max-width: 100%;
+    max-height : 15%;
+    margin: 5% 10%;
+}
+
+/*------------------------------------------------------------
+Formulaire d'inscription à la newsletter
+------------------------------------------------------------*/
+#newsletter{
+    margin: 1% 0;
+    
+    form{
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    label{
+        /*TYPO*/
+        line-height: 1.5em;
+        font-size: 1.1em;
+        font-weight: 200;
+        color: $gris;
+
+        /*BLOCK*/
+        margin-right: 1%;
+    }
+    
+    input#mc4wp_email {
+        /*TYPO*/
+        line-height: 1.5em; 
+
+        /*BLOCK*/
+        margin-right: 1%;
+        padding-left: 1%;
+        background-color: $grisPastel;
+        color: $gris;
+        border-radius: 3px;
+    }
+    
+    input.bouton {
+        /*TYPO*/
+        color: #fff;
+        font-size: 1.3em;
+        
+        /*POSITION BLOCK*/
+        margin-right: 6%;
+        
+        /* MISE EN FORME BLOCK*/
+        padding: 0.5%;
+        background-color: $orange;
+        border: outset 2px $orange;
+        border-radius: 3px;
+    }
+}
+
+/*------------------------------------------------------------ 
+styles menus navigation commun au Header et Footer 
+------------------------------------------------------------*/
+.menuHorizontal {
+    li {
+        display: inline-block;
+        position: relative;
+    }
+    
+    a {
+        display: block;
+        padding: 0.8em;
+        color: $gris;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 1.1em;
+        line-height: 1.5em;
+    }
+    
+    .sub-menu {
+        background-color: $gris;
+        border-top: 0;
+        padding: 0;
+        margin: inherit;
+        position: absolute;
+        left: -2px;
+        z-index: 99999;
+        height: 1px;
+        width: 1px;
+        overflow: hidden;
+        clip: rect(1px, 1px, 1px, 1px);
+    }
+    
+    .current_page_item > a,
+    .current_page_ancestor > a,
+    .current-menu-item > a,
+    .current-menu-ancestor > a {
+	    color: $bleuFonce ;
+	    font-style: italic;
+    }
+}
+
+.menuHorizontal .sub-menu ul,
+.menuHorizontal .children ul {
+	border-left: 0;
+	left: 100%;
+	top: 0;
+}
+
+ul.menuHorizontal ul a,
+.menuHorizontal ul ul a {
+	color: $blanc;
+	margin: 0;
+	width: 200px;
+}
+
+ul.menuHorizontal li:hover > ul,
+.menuHorizontal ul li:hover > ul,
+ul.menuHorizontal .focus > ul,
+.menuHorizontal .focus > ul {
+	clip: inherit;
+	overflow: inherit;
+	height: inherit;
+	width: inherit;
+}
+
+.menu {margin: 0;}
+
+/*------------------------------------------------------------
+styles pour le menu Header/principal 
+------------------------------------------------------------*/
+.menu-navigation-principale-container{
+    margin:inherit;
+    padding: inherit;
+}
+
+#menu-navigation-principale {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 6%;
+}
+
+#menuHeader {
+    a:hover > a, a:hover,
+    a:focus > a, a:focus, 
+    a:active > a, a:active {
+        background-color: $grisPastel;
+        color: $bleuFonce;
+}
+}
+
+ul#menuHeader ul a:hover,
+#menuHeader ul ul a:hover,
+ul#menuHeader ul a:focus,
+#menuHeader ul ul a:focus {
+	background-color:$bleuVertPastel;
+}
+
+/*------------------------------------------------------------
+styles pour le menu Footer / secondaire 
+------------------------------------------------------------*/
+#menu-menu-footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+    a:hover > a, a:hover,
+    a:focus > a, a:focus, 
+    a:active > a, a:active {
+        color: $bleuFonce;
+    }
+}
+

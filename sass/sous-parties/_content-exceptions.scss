@@ -1,0 +1,142 @@
+/*------------------------------------------------------------ 
+SIDEBAR.PHP : Widget Tag Cloud 
+------------------------------------------------------------*/
+.tagcloud {
+    text-align: center;
+
+    a {
+        font-weight: 500;
+    }
+
+    a[class$="0"]:hover,
+    a[class$="1"]:hover,
+    a[class$="2"]:hover,
+    a[class$="3"]:hover,
+    a[class$="4"]:hover,
+    a[class$="5"]:hover,
+    a[class$="6"]:hover,
+    a[class$="7"]:hover,
+    a[class$="8"]:hover,
+    a[class$="9"]:hover {
+        color : #4e4797;
+    }
+
+    a[class$="0"],
+    a[class$="6"],
+    a[class$="9"] {
+        color : #968881;
+    }
+
+    a[class$="1"],
+    a[class$="4"],
+    a[class$="7"] {
+        color : #81b15a;
+    }
+
+    a[class$="2"],
+    a[class$="5"] {
+        color: #ED9E10;
+    }
+
+    a[class$="3"],
+    a[class$="8"] {
+        color : #EF7F3C;
+    }
+}
+
+/*------------------------------------------------------------ 
+SIDEBAR.PHP : Widget Liste des catégories
+------------------------------------------------------------*/
+.widget {
+    margin-top: 3%;
+    h3 { margin-top: 2%;}
+    ul {margin: 0 5%;}
+    ul.children {margin: 0;}
+    li {
+        list-style: none;
+        padding: 0;
+        a {
+            display: block;
+            color: #968881;
+            font-weight: 200;
+            padding: 1% 0;
+            text-decoration: none;
+        }
+        a:hover {
+            color : #4e4797;
+            font-weight: 500;
+        } 
+    }
+}
+
+/*------------------------------------------------------------ 
+SIDEBAR.PHP : Widget Formulaire de recherche
+------------------------------------------------------------*/
+.searchform {
+    div {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    label {
+        display: none !important;
+        visibility: hidden;
+    }
+
+    input#s {
+        width: 60%;
+    }
+
+    input#searchsubmit {
+        @extend .bouton-vert;
+    }
+}
+
+/*------------------------------------------------------------ 
+SINGLE.PHP : Style Google Map 
+------------------------------------------------------------*/
+.acf-map {
+	/*width: 100%;*/
+	height: 300px;
+	border: #ccc solid 1px;
+	margin: 20px inherit;
+}
+
+/*------------------------------------------------------------ 
+INDEX.PHP : mise en forme des paragraphes de résultats
+------------------------------------------------------------*/
+.resultatArticle{
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+    img{
+        width: 100%;
+        height: auto;
+    }
+
+    h3 {
+        margin-top: 0;
+        margin-bottom: 2%;
+        a {
+            color : inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #4e4797;
+        }
+    }
+    
+    h6{
+        margin-top: 1%;
+        margin-bottom: 2%;
+        color: #9EC419;
+    }
+}
+
+.donneurDordres {
+    margin: 3% auto;
+}

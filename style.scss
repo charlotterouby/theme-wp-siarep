@@ -1,0 +1,81 @@
+/*!
+Theme name: Theme WordPress SIAREP
+Author: Charlotte Rouby
+Description: thème wordpress 4.2 complet utilisant la charte graphique de la société SIAREP
+Version: v0.1
+*/
+
+/*! ==========================================================================
+   SOMMAIRE
+
+I. Normalize
+II. Unsemantic Grid
+    A. Unsemantic Grid Base
+    B. Unsemantic Grid Responsive
+III. Animation CSS "animate.css"
+IV. Styles par défaut HTML5 BoilerPlate
+V. Styles du Thème
+    A. Variables
+    B. Header et Footer
+        _Logo  
+        _Inscription à la newsletter
+        _Navigation
+    C. Modules réutilisables
+        _Typographie
+        _Images et galeries
+        _Encarts asideUn et asideDeux
+        _Fil d'Ariane / breadcrumbs
+        _Boutons
+    D. Styles particuliers aux pages
+        _Sidebar.php : widgets
+        _Single.php : google map
+        _Index.php : mise en forme des résultats de recherche
+    E. Media queries
+        _styles mobiles
+        _styles print
+ ========================================================================== */
+
+/*! ==========================================================================
+   I. NORMALIZE
+ ========================================================================== */
+@import "sass/sous-parties/normalize";
+/*! ==========================================================================
+   II A. UNSEMANTIC GRID BASE
+ ========================================================================== */
+@import "sass/partials/unsemantic-vars";
+@import "sass/partials/unsemantic-ie-snap";
+@include unsemantic-grid-placeholders;
+@include unsemantic-grid-base;
+/*! ==========================================================================
+   II B. UNSEMANTIC GRID RESPONSIVE
+ ========================================================================== */
+@import "sass/partials/unsemantic-grid-responsive";
+/*! ==========================================================================
+   III. ANIMATIONS CSS "animate.css"
+ ========================================================================== */
+@import "sass/sous-parties/animate"
+/*! ==========================================================================
+   IV. STYLES PAR DEFAUT HTML5 BOILERPLATE
+ ========================================================================== */
+@import "sass/sous-parties/main";
+/*! ==========================================================================
+   V. STYLES DU THEME
+    IV A. VARIABLES
+ ========================================================================== */
+@import "sass/sous-parties/variables";
+/*! ==========================================================================
+   V B. STYLES HEADER ET FOOTER
+ ========================================================================== */
+@import "sass/sous-parties/header-footer";
+/*! ==========================================================================
+   V C. MODULES REUTILISABLES
+ ========================================================================== */
+@import "sass/sous-parties/content-modules";
+/*! ==========================================================================
+   V D. STYLES PARTICULIERS AUX PAGES
+ ========================================================================== */
+@import "sass/sous-parties/content-exceptions";
+/*! ==========================================================================
+   V E. MEDIA QUERIES
+ ========================================================================== */
+@import "sass/sous-parties/media-queries";

@@ -2,7 +2,7 @@
 <?php get_header(); ?> 
 
 <!-- contenu principal-->
-<main class="grid-100 grid-parent">
+<main id="front-page" class="grid-100 grid-parent">
     <?php dynamic_sidebar('home'); ?>
 </main>
 

@@ -1,0 +1,197 @@
+//* { border: solid 1px;}
+/*------------------------------------------------------------
+TYPOGRAPHIE GENERALE
+------------------------------------------------------------*/
+
+body {
+    font-family: "Ubuntu", Tahoma, sans-serif;
+    font-size: 0.8em;}
+
+h1, .h1 { 
+    font-weight: bold;
+    font-size: 2.5em;
+    color: $orange;}
+
+h2, .h2 {
+    font-weight: bold;
+    font-size: 1.75em;
+    color: $vert ;}
+
+h3, .h3 {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: $orangeMoyen;}
+
+h4, .h4 {
+    font-weight: bold;
+    font-size: 1.33em;
+    color: $orangeFonce;}
+
+h5, .h5 {
+    font-weight: 500;
+    font-size: 1.25em;
+    font-style: italic;
+    color: $gris;}
+
+h6, .h6 {
+    font-weight: 500;
+    font-size: 1em;
+    color: $gris;}
+
+p {
+    font-weight: normal;
+    font-size: 1em;
+    line-height: 1.5em;
+    a {
+        font-weight: normal;
+        font-size: 1em;
+        color: $bleuFonce;
+    }
+    
+    a:hover, a:visited {color: $bleuVert;}
+}
+
+a {text-decoration: none;}
+//Les styles des liens sonts définis au cas par cas 
+//avec en général une couleur identique au contexte et bleu foncé au survol et en activité 
+//sauf dans le corps de texte où le bleu foncé est la couleur par défaut et ils deviennent bleu-vert au survol et après visite 
+
+//ajouter des styles pour blockquote ?
+
+.contenu-principal {
+    ul { margin : 2%;}
+    li {
+        list-style: square;
+        list-style-position: inside;
+        padding: 0 4%;
+    }
+}
+
+/*------------------------------------------------------------
+IMAGES & GALLERIES 
+------------------------------------------------------------*/
+/* classe responsive des images*/
+.img-100 { 
+    width: 100%;
+    height: auto;
+} 
+
+/* dans le corps de texte img à gauche ou à droite habillage de texte flottant*/
+.alignleft {
+    width: 33%;
+    float: left;
+} 
+
+.alignright {
+    width: 33%;
+    float: right;
+}
+
+/* mise en forme de la galerie d'images wordpress*/
+.gallery {
+    @extend .grid-100;
+    img {@extend .img-100;}
+}
+
+.gallery-icon {
+    padding:2%;
+}
+
+.wp-caption-text {
+    font-weight: 500;
+    font-style: italic;
+    text-align: center;
+}
+
+/*------------------------------------------------------------
+.asideUn et .asideDeux 
+------------------------------------------------------------*/
+
+.asideUn, .asideDeux {
+    background-color: $grisPastel;
+    margin: 5% auto;
+    padding-bottom: 5%;
+    
+    h2{
+        display: block;
+        color: $blanc;
+        margin: 0;
+        padding: 2%;
+        font-size: 2em;
+        text-align: center;
+    }
+    
+    h3 {
+        margin-bottom: 2%;
+    }
+    
+    p {
+        margin : 0.2em auto;
+    }
+    
+    ul{margin : 2%;}
+    
+    li{
+        list-style: square;
+        list-style-position: inside;
+        padding: 0 4%;
+    }
+}
+
+
+.asideUn {
+    h2 { background-color: $vert ; }
+    h3 { color: $vert; }
+}
+
+.asideDeux {
+    h2 { background-color: $bleuVert; }
+    h3 { color: $bleuVert;}
+}
+
+/*------------------------------------------------------------
+Fil d'Ariane / Breadcrumbs
+------------------------------------------------------------*/
+#breadcrumbs {
+    margin: 1% auto;
+    color: black;
+    
+    a {
+        color : $bleuFonce;
+    }
+    
+    a:hover {
+        color: $bleuVert;
+        text-decoration: underline;
+    }
+}
+
+
+/*------------------------------------------------------------
+Boutons
+------------------------------------------------------------*/
+
+.bouton {
+    /*TYPO*/
+    color: $blanc;
+    font-size: 1.3em;
+
+    /*POSITION BLOCK*/
+    margin-right: 6%;
+    
+    /* MISE EN FORME BLOCK*/
+    padding: 0.5%;
+    border-radius: 3px;
+}
+
+.bouton-vert {
+    @extend .bouton;
+    background-color: $vertMoyen;
+    border: outset 2px $vertMoyen;
+}
+
+.bouton-orange{
+    @extend .bouton;
+    background-color: $orange;
+    border: outset 2px $orange;
+}

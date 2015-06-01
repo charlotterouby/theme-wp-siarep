@@ -32,11 +32,8 @@
                 <h6 class="grid-100">Maître d'ouvrage</h3>
                     
                 <?php if(get_field('logo_maitre_douvrage')): ?> 
-                <div class="grid-33 grid-parent">
+                <div class="grid-100">
                         <img src="<?php the_field('logo_maitre_douvrage'); ?>" alt="logo maitre d'ouvrage" class="img-100"/>
-                    </div>
-                <div class="grid-66">
-                            <?php the_field('maitre_douvrage'); ?>
                     </div>
                     
                 <?php else: ?>
@@ -53,11 +50,8 @@
                     <h6 class="grid-100">Maître d'oeuvre</h6>
                     
                     <?php if(get_field('logo_maitre_doeuvre')): ?>
-                    <div class="grid-33 grid-parent">
+                    <div class="grid-100">
                         <img src="<?php the_field('logo_maitre_doeuvre'); ?>" alt="logo maître d'oeuvre" class="img-100" />
-                    </div>
-                    <div class="grid-66">
-                        <?php the_field('maitre_doeuvre'); ?>
                     </div>
                     
                     <?php else: ?>

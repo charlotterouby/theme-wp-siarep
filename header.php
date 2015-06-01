@@ -72,7 +72,7 @@
                 
             
                 <!-- menu de navigation principal -->
-                <nav role="navigation" id="menuMobile" class="mobile-grid-100 grid-parent">
+                <nav role="navigation" id="menuMobile" class="mobile-grid-100 grid-parent menuVertical">
                     <?php wp_nav_menu(array(
                          'sort_column'=>'menu_order',
                         'theme_location'=>'principal')

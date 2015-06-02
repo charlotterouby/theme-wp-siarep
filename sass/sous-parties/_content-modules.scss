@@ -240,3 +240,17 @@ INDEX + SINGLE : Image à la une + paagraphe de texte
 .donneurDordres {
     margin: 3% auto;
 }
+
+/*------------------------------------------------------------ 
+Template de page : module parallaxe
+------------------------------------------------------------*/
+.container-parallaxe {
+	margin: 0;
+	padding: 0;
+	background: url(http://lorempixel.com/2000/1300/city) no-repeat center fixed;
+	-webkit-background-size: cover;
+	/* pour anciens Chrome et Safari */
+	
+	background-size: cover;
+	/* version standardisée */
+}

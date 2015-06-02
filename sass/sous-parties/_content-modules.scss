@@ -78,12 +78,13 @@ IMAGES & GALLERIES
 
 /* dans le corps de texte img à gauche ou à droite habillage de texte flottant*/
 .alignleft {
-    width: 33%;
+    @extend .grid-33;
+	height:auto;
     float: left;
 } 
 
 .alignright {
-    width: 33%;
+    @extend .grid-33; 
     float: right;
 }
 
@@ -194,4 +195,48 @@ Boutons
     @extend .bouton;
     background-color: $orange;
     border: outset 2px $orange;
+}
+
+/*------------------------------------------------------------ 
+INDEX + SINGLE : Image à la une + paagraphe de texte
+------------------------------------------------------------*/
+.breve, .resultatArticle {
+    margin-top: 3%;
+    margin-bottom: 3%;
+
+	h3 {
+        margin-top: 0;
+        margin-bottom: 2%;
+        a {
+            color : inherit;
+            font-size: inherit;
+            font-weight: inherit;
+            text-decoration: none;
+        }
+        a:hover {
+            color: #4e4797;
+        }
+    }
+    
+    h6{
+        margin-top: 1%;
+        margin-bottom: 2%;
+        color: #9EC419;
+    }
+}
+
+.resultatArticle img{
+        width: 100%;
+        height: auto;
+    }
+
+.breve {
+	h3, h3+p {@extend .grid-66;}
+	hr {@extend .grid-100;}
+	.wp-caption	img {@extend .img-100;}
+}
+	
+
+.donneurDordres {
+    margin: 3% auto;
 }

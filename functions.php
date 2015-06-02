@@ -64,18 +64,7 @@ function custom_tag_cloud($args) {
 }
 add_filter('widget_tag_cloud_args', 'custom_tag_cloud');
 
-<<<<<<< HEAD
-// Rendre les images responsives en supprimant les attributs width et height
-/*function bbx_images( $html ) {
-    $html = preg_replace( '/(width|height)="\d*"\s/',"", $html ); 
-    return $html; 
-} 
-add_filter( 'post_thumbnail_html', 'bbx_images' ); 
-add_filter( 'image_send_to_editor', 'bbx_images'); 
-add_filter( 'wp_get_attachment_link', 'bbx_images');*/
 
 
-=======
->>>>>>> origin/compilation-css-avec-sass
 //Fin de la balise '<?php' du début de fichier
 ?>

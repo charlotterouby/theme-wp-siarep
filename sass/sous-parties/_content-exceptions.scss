@@ -104,3 +104,32 @@ SINGLE.PHP : Style Google Map
 	margin: 20px inherit;
 }
 
+/*------------------------------------------------------------ 
+Page Découvrez-nous
+------------------------------------------------------------*/
+#presentation, #savoirFaire, #equipe {background-color: $blanc;}
+#chiffresCles {background-color:$orangePastel;}
+#contact {background-color:$grisPastel;}
+
+#presentation, #chiffresCles, #savoirFaire, #equipe, #contact {
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+#S, #R {
+	font-size: 2.2em;
+	font-weight: 500;
+}
+#I, #E {
+	font-size: 1.4em;
+	font-weight: 500;
+}
+#A, #P {
+	font-size: 3.2em;
+	font-weight: 500;
+}
+.articleDe {
+	font-size: 0.4em;
+	font-weight: normal;
+	font-style : italic;
+}

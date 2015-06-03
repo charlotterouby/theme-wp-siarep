@@ -5333,14 +5333,57 @@ INDEX + SINGLE : Image à la une + paagraphe de texte
 Template de page : module parallaxe
 ------------------------------------------------------------*/
 /* line 247, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
-.container-parallaxe {
-  margin: 0;
-  padding: 0;
-  background: url(http://lorempixel.com/2000/1300/city) no-repeat center fixed;
+.section-parallax {
   -webkit-background-size: cover;
-  /* pour anciens Chrome et Safari */
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
-  /* version standardisée */ }
+  min-height: 250px;
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+/* line 257, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+#slide1 {
+  background: url(../../images/city-q-c-1920-1080-6.jpg) 50% 0 no-repeat fixed; }
+
+/* line 258, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+#slide2 {
+  background: url(../../images/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed; }
+
+/* line 259, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+#slide3 {
+  background: url(../../images/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed; }
+
+/* line 260, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+#slide4 {
+  background: url(../../images/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed; }
+
+/* line 261, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+#slide5 {
+  background: url(../../images/city-q-c-1920-1280-8.jpg) 50% 0 no-repeat fixed; }
+
+/* line 263, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+.layer {
+  background: #333;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6; }
+
+/* line 274, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+.slide_inside h1, .slide_inside h2, .slide_inside h3, .slide_inside h4, .slide_inside h5, .slide_inside h6, .slide_inside p, .slide_inside a {
+  color: #fff;
+  margin: 0;
+  padding: 0; }
+/* line 280, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+.slide_inside span {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
 
 /*! ==========================================================================
    V D. STYLES PARTICULIERS AUX PAGES
@@ -5427,6 +5470,47 @@ SINGLE.PHP : Style Google Map
   height: 300px;
   border: #ccc solid 1px;
   margin: 20px inherit; }
+
+/*------------------------------------------------------------ 
+Page Découvrez-nous
+------------------------------------------------------------*/
+/* line 110, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#presentation, #savoirFaire, #equipe {
+  background-color: #fff; }
+
+/* line 111, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#chiffresCles {
+  background-color: #fff6ce; }
+
+/* line 112, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#contact {
+  background-color: #E8E4E2; }
+
+/* line 114, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#presentation, #chiffresCles, #savoirFaire, #equipe, #contact {
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+/* line 119, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#S, #R {
+  font-size: 2.2em;
+  font-weight: 500; }
+
+/* line 123, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#I, #E {
+  font-size: 1.4em;
+  font-weight: 500; }
+
+/* line 127, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#A, #P {
+  font-size: 3.2em;
+  font-weight: 500; }
+
+/* line 131, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+.articleDe {
+  font-size: 0.4em;
+  font-weight: normal;
+  font-style: italic; }
 
 /*! ==========================================================================
    V E. MEDIA QUERIES

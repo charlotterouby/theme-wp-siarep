@@ -20,40 +20,164 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
-        
+        <header class="hide-on-mobile grid-100 grid-parent">
+
+		<!-- logo -->
+		<div id="logo" class="hide-on-mobile grid-20">
+			<a class="home-link" href="" title="Siarep" rel="home">
+				<img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo">
+			</a>
+		</div>
+
+		<!-- barre newsletter & boutons call to action -->
+		<div id="newsletter" class="hide-on-mobile grid-80 grid-parent">
+			<!-- MailChimp for WordPress v2.3.4 - https://wordpress.org/plugins/mailchimp-for-wp/ -->
+			<div id="mc4wp-form-1" class="form mc4wp-form">
+				<form method="post" role="form">
+					<label>Inscrivez-vous à la newsletter :</label>
+					<input type="email" id="mc4wp_email" name="EMAIL" placeholder="Votre adresse mail" required="">
+					<input class="bouton" type="submit" value="S'inscrire">
+					<input type="hidden" name="_mc4wp_required_but_not_really" value="" style="display: none;">
+					<input type="hidden" name="_mc4wp_timestamp" value="1433336261">
+					<input type="hidden" name="_mc4wp_form_id" value="0">
+					<input type="hidden" name="_mc4wp_form_element_id" value="mc4wp-form-1">
+					<input type="hidden" name="_mc4wp_form_submit" value="1">
+					<input type="hidden" name="_mc4wp_form_nonce" value="caf8d472a9">
+				</form>
+			</div>
+			<!-- / MailChimp for WordPress Plugin -->
+		</div>
+
+		<!-- menu de navigation principal -->
+		<nav id="menuHeader" class="hide-on-mobile grid-80 grid-parent menuHorizontal">
+			<div class="menu-navigation-principale-container">
+				<ul id="menu-navigation-principale" class="menu">
+					<li id="menu-item-41" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-41">
+						<a href="">Découvrez-nous</a>
+						<ul id="navpage" class="sub-menu">
+							<li><a href="#presentation" title="Next Section">Présentation</a>
+							</li>
+							<li><a href="#chiffresCles" title="Next Section">Les chiffres clés</a>
+							</li>
+							<li><a href="#savoirFaire" title="Next Section">Nos savoir-faire</a>
+							</li>
+							<li><a href="#equipe" title="Next Section">Nos équipes</a>
+							</li>
+							<li><a href="#contact" title="Next Section">Contactez-nous</a>
+							</li>
+						</ul>
+					</li>
+					<li id="menu-item-40" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-40">
+						<a href="">Nos Engagements</a>
+						<ul class="sub-menu">
+							<li><a href="#valeurs">Nos valeurs</a></li>
+							<li><a href="#engagementSocial">Assumer notre responsabilité sociétale</a></li>
+							<li><a href="#ecologie">Réduire l'empreinte écologique</a></li>
+						</ul>
+					</li>
+					<li id="menu-item-6" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-6"><a href="">Nos Références</a>
+						<ul class="sub-menu">
+							<li id="menu-item-12" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-12"><a href="">Travaux sur l’enveloppe du bâtiment</a>
+							</li>
+							<li id="menu-item-7" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-7"><a href="">Installations photovoltaïques</a>
+							</li>
+							<li id="menu-item-8" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-has-children menu-item-8"><a href="">Opérations en entreprise générale</a>
+								<ul class="sub-menu">
+									<li id="menu-item-9" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-9"><a href="">Constructions neuves</a>
+									</li>
+									<li id="menu-item-10" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-10"><a href="">Rénovation / Réhabilitation d’ouvrages fonctionnels</a>
+									</li>
+									<li id="menu-item-11" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11"><a href="">Rénovation / Réhabilitation de logements</a>
+									</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li id="menu-item-39" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-39">
+						<a href="http://localhost/siarep/index.php/documentation/">Documentation</a>
+					</li>
+					<li id="menu-item-38" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-38">
+						<a href="">Recrutement</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+   
     <!-- conteneur principal du site -->
 	<div id="conteneur" class="grid-container grid-parent">
-		<main id="page-container" class="grid-100">
-						<section id="slide1" class="grid-100 grid-parent container-parallaxe">
+		<main id="page-container" class="grid-100 grid-parent">
+		
+		<!--entête #slide6-->
+			<section id="slide6" class="grid-100 grid-parent section-parallax">
+			<div class="layer grid-100 grid-parent"></div>
+				<div class="push-5 grid-90 slide_inside">
+					<h1>Nos engagements</h1>
+				</div>
+			</section>
+		
+		<!-- nos valeurs -->
+			<section id="valeurs" class="textPromo grid-100 grid-parent">
+				<div class="push-5 grid-90">
+					<div class="grid-33">
+						<h2 class="h1">Nos valeurs</h2>
+						<p>Lorem ipsum dolor sit amet, aperiam laboramus an vel, eu consul oportere maiestatis est. An per facer nusquam persecuti. Affert facilisis temporibus mei te, per vituperata sadipscing contentiones no. Novum perfecto accusata ne pri, vel nulla epicurei hendrerit ea, per facilisis imperdiet intellegat ad. Ex vim ridens pericula pertinacia, has te accusata forensibus interesset, odio assentior accommodare nec an.
+							<br/> Feugait fierent periculis sit at, postea labore tritani ne his, eos dicat blandit ut. Nostrum assentior ad vix, no vivendo verterem disputationi duo, quo cibo mucius vivendo et. Eos odio scripta persius ei, no eleifend theophrastus nam. Nam an case qualisque, quo utroque nominati te. Pri minimum adolescens id, cu eam fugit causae adipiscing.
+							<br/> Te alia utinam populo vim, eos id purto tacimates euripidis. Usu no laboramus suscipiantur. Denique legendos duo no, nam an cetero adipisci. Modo prima consequat nam ex.
+							<br/> Vix at case ridens mandamus, mentitum inimicus forensibus ne pro, dolore maiorum ea duo. Id impedit detraxit cum, usu id tantas eruditi. Interesset intellegebat mea an, ad autem mollis aperiri sea. Tale esse mediocrem usu an. Eu eos accusam corpora reprehendunt, dolorum accusamus intellegam est te.
+							<br/> Ea prompta intellegam mei. An doming scaevola efficiantur sed. Ius autem congue ei. Vel velit prodesset ne, cibo utamur admodum at sea, no duo clita accusata. Saepe praesent vel ea, pri illud feugait voluptua at.
+						</p>
+					</div>
+					<div class="grid-66">
+						<img src="../images/imgPresentation.png" alt="le siège social à Arles" class="img-100" />
+				</div>
+			</section>
+		
+		<!-- transition 1 #slide7-->
+			<section id="slide7" class="grid-100 grid-parent section-parallax">
+				<div class="layer"></div>
 				<div class="push-5 grid-90 slide_inside"></div>
 			</section>
-			<section id="slide2" class="grid-100 grid-parent container-parallaxe">
+		
+		<!-- Responsabilité sociale -->
+			<section id="engagementSocial" class="textPromo grid-100 grid-parent">
+				<div class="push-5 grid-90">
+					<div class="grid-33">
+						<h2 class="h1">Assumer notre responsabilité sociétale</h2>
+						<p>Lorem ipsum dolor sit amet, aperiam laboramus an vel, eu consul oportere maiestatis est. An per facer nusquam persecuti. Affert facilisis temporibus mei te, per vituperata sadipscing contentiones no. Novum perfecto accusata ne pri, vel nulla epicurei hendrerit ea, per facilisis imperdiet intellegat ad. Ex vim ridens pericula pertinacia, has te accusata forensibus interesset, odio assentior accommodare nec an.
+							<br/> Feugait fierent periculis sit at, postea labore tritani ne his, eos dicat blandit ut. Nostrum assentior ad vix, no vivendo verterem disputationi duo, quo cibo mucius vivendo et. Eos odio scripta persius ei, no eleifend theophrastus nam. Nam an case qualisque, quo utroque nominati te. Pri minimum adolescens id, cu eam fugit causae adipiscing.
+							<br/> Te alia utinam populo vim, eos id purto tacimates euripidis. Usu no laboramus suscipiantur. Denique legendos duo no, nam an cetero adipisci. Modo prima consequat nam ex.
+							<br/> Vix at case ridens mandamus, mentitum inimicus forensibus ne pro, dolore maiorum ea duo. Id impedit detraxit cum, usu id tantas eruditi. Interesset intellegebat mea an, ad autem mollis aperiri sea. Tale esse mediocrem usu an. Eu eos accusam corpora reprehendunt, dolorum accusamus intellegam est te.
+							<br/> Ea prompta intellegam mei. An doming scaevola efficiantur sed. Ius autem congue ei. Vel velit prodesset ne, cibo utamur admodum at sea, no duo clita accusata. Saepe praesent vel ea, pri illud feugait voluptua at.
+						</p>
+					</div>
+					<div class="grid-66">
+						<img src="../images/imgPresentation.png" alt="le siège social à Arles" class="img-100" />
+				</div>
+			</section>
+		
+		<!-- transition 2 #slide8 -->
+			<section id="slide8" class="grid-100 grid-parent section-parallax">
+				<div class="layer"></div>
 				<div class="push-5 grid-90 slide_inside"></div>
 			</section>
-			<section id="slide3" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
+		
+		<!-- empreinte écologique -->
+			<section id="ecologie" class="textPromo grid-100 grid-parent">
+				<div class="push-5 grid-90">
+					<div class="grid-33">
+						<h2 class="h1">Réduire l'empreinte écologique</h2>
+						<p>Lorem ipsum dolor sit amet, aperiam laboramus an vel, eu consul oportere maiestatis est. An per facer nusquam persecuti. Affert facilisis temporibus mei te, per vituperata sadipscing contentiones no. Novum perfecto accusata ne pri, vel nulla epicurei hendrerit ea, per facilisis imperdiet intellegat ad. Ex vim ridens pericula pertinacia, has te accusata forensibus interesset, odio assentior accommodare nec an.
+							<br/> Feugait fierent periculis sit at, postea labore tritani ne his, eos dicat blandit ut. Nostrum assentior ad vix, no vivendo verterem disputationi duo, quo cibo mucius vivendo et. Eos odio scripta persius ei, no eleifend theophrastus nam. Nam an case qualisque, quo utroque nominati te. Pri minimum adolescens id, cu eam fugit causae adipiscing.
+							<br/> Te alia utinam populo vim, eos id purto tacimates euripidis. Usu no laboramus suscipiantur. Denique legendos duo no, nam an cetero adipisci. Modo prima consequat nam ex.
+							<br/> Vix at case ridens mandamus, mentitum inimicus forensibus ne pro, dolore maiorum ea duo. Id impedit detraxit cum, usu id tantas eruditi. Interesset intellegebat mea an, ad autem mollis aperiri sea. Tale esse mediocrem usu an. Eu eos accusam corpora reprehendunt, dolorum accusamus intellegam est te.
+							<br/> Ea prompta intellegam mei. An doming scaevola efficiantur sed. Ius autem congue ei. Vel velit prodesset ne, cibo utamur admodum at sea, no duo clita accusata. Saepe praesent vel ea, pri illud feugait voluptua at.
+						</p>
+					</div>
+					<div class="grid-66">
+						<img src="../images/imgPresentation.png" alt="le siège social à Arles" class="img-100" />
+				</div>
 			</section>
-			<section id="slide4" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>
-			<section id="slide5" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>
-			<section id="slide6" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>
-			<section id="slide7" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>
-			<section id="slide8" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>
-			<section id="slide9" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>
-			<section id="slide10" class="grid-100 grid-parent container-parallaxe">
-				<div class="push-5 grid-90 slide_inside"></div>
-			</section>	
 		</main>
        
        <!-- FOOTER -->

@@ -240,3 +240,43 @@ INDEX + SINGLE : Image à la une + paagraphe de texte
 .donneurDordres {
     margin: 3% auto;
 }
+
+/*------------------------------------------------------------ 
+Template de page : module parallaxe
+------------------------------------------------------------*/
+.section-parallax {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 250px; //sur mobile 150px ?
+	position:relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+
+.layer {
+  background:#333;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
+}
+
+.slide_inside {
+	h1, h2, h3, h4, h5, h6, p, a {
+		color: $blanc;
+		margin : 0;
+		padding : 0;
+		position: relative;
+	}
+	
+	span{
+		margin-top: 0;
+		margin-bottom: 0;
+		padding-top: 0;
+		padding-bottom: 0;
+	}
+}

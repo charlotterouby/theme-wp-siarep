@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>styleguide SIAREP</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/unsemantic-grid-base.css">
+        <link rel="stylesheet" href="css/unsemantic-grid-responsive.css">
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div class="grid-container">
+            <div class="push-5 grid-90">
+                <h6>NAVIGATION</h6>
+                <nav id="menuHeader" class="menuHorizontal">
+                <div id="menu-navigation-principale-container">
+                    <ul>
+                        <li><a href="">item 1</a></li>
+                        <li><a href="">item 1</a></li>
+                        <li><a href="">item 1</a>
+                            <ul class="sub-menu">
+                                <li><a href="">item 2</a></li>
+                                <li><a href="">item 2</a></li>
+                                <li><a href="">item 2</a>
+                                    <ul class="sub-menu">
+                                        <li><a href="">item 3</a></li>
+                                        <li><a href="">item 3</a></li>
+                                        <li><a href="">item 3</a></li>
+                                    </ul>                                
+                                </li>
+                            </ul>                        
+                        </li>
+                        <li><a href="">item 1</a></li>
+                        <li><a href="">item 1</a></li>
+                    </ul>
+                </div>
+            </nav>
+            </div> 
+            <!-- fin module navigation-->
+            
+            <div class="push-5 grid-90">
+            <h6>GRILLE</h6>
+                <div class="grid-100 fond-couleur">16 colonnes / largeur 100%</div>
+                <div class="grid-5 fond-couleur">item 1</div>
+                <div class="grid-10 fond-couleur">item 1</div>
+                <div class="grid-15 fond-couleur">item 1</div>
+                <div class="grid-20 fond-couleur">item 1</div>
+            </div> 
+            <!-- mise en évidence de la grille -->
+            
+            <div class="push-5 grid-90">
+            <h6>STYLES TYPOGRAPHIQUES</h6>
+        
+            <h1>Mon super titre de niveau 1</h1>
+            <h2>Mon super titre de niveau 2</h2>
+            <h3>Mon super titre de niveau 3</h3>
+            <h4>Mon super titre de niveau 4</h4>
+            <h5>Mon super titre de niveau 5</h5>
+            <h6>Mon super titre de niveau 6</h6>
+        
+            <p class="grid-50">Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+                <a href="#">Ceci est un lien</a> 
+            </p>
+                </div>
+            <!-- fin des styles typograhiques-->
+            
+            <div class="push-5 grid-90">
+            <h6>MODULES ASIDE</h6>
+                <aside class="grid-33 grid-parent">
+        <section class="asideUn">
+            <h2>Donneurs d'ordre</h2>
+            <article class=" grid-100 grid-parent">
+                <h3 class="grid-100">Maître d'ouvrage</h3>
+                <div class="grid-33 grid-parent"><img src="" alt="logo maitre d'ouvrage" class="img-100"/></div>
+                <div class="grid-66">
+                    <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            </p>
+                </div>
+            </article>
+            
+            <article class="grid-100 grid-parent">
+                <h3 class="grid-100">Maître d'oeuvre</h3>
+                <div class="grid-33 grid-parent"><img src="" alt="logo maître d'oeuvre" class="img-100" /></div>
+                <div class="grid-66">
+                    <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            </p>
+                </div>
+            </article>
+            
+            <article class="grid-100 grid-parent">
+                <h3 class="grid-100">Bureau d'étude</h3>
+                <div class="grid-33 grid-parent"><img src="" alt="logo bureau d'étude" class="img-100" /></div>
+                <div class="grid-66">
+                    <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+                </div>
+            </article>
+        </section>
+        
+        <section class="asideDeux">
+            <h2>Le chantier en bref</h2>
+            <!-- localisation du chantier -->
+            <article class="grid-100">
+                <h3 class="grid-100">Localisation</h3>
+                <div id="acf-map" class="grid-100">
+                    
+                </div>
+            </article>
+            
+            <!-- calendrier -->
+            <article class="grid-100">
+                <h3 class="grid-100">Calendrier</h3>
+                <div class="grid-100">
+                    <p>Installationdu chantier : dd/mm/yy </p>
+                </div>
+                <div class="grid-100">
+                    <p>Date de livraison : dd/mm/yy </p>
+                </div>
+            </article>
+            
+            <!-- Marché -->
+            <article class="grid-100">
+                <h3 class="grid-100">Marché</h3>
+                <div class="grid-100">
+                <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            </p>
+                </div>
+            </article>
+            
+            <!-- production-->
+            <article class="grid-100">
+                <h3 class="grid-100">Production</h3>
+                <div class="grid-100">
+                <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            </p>
+                </div>
+            </article>
+            
+            <!-- matériaux -->
+            <article class="grid-100">
+                <h3 class="grid-100">Matériaux de référence</h3>
+                <div class="grid-100">
+                <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            </p>
+                </div>
+            </article>
+            
+            <!-- partenaires-->
+            <article class="grid-100">
+                <h3 class="grid-100">Partenaires</h3>
+                <div class="grid-100">
+                <p>Ceci est un paragraphe. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+            </p>
+                </div>
+            </article>
+        </section>
+    </aside>                
+            </div>
+            <!-- fin des modules .asideUnet .asideDeux -->
+        
+            <!-- Balises scripts Google maps api & JS & Jquery -->
+            <script src="https://maps.googleapis.com/maps/api/js"></script>
+            <!--<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>-->
+        <script src="js/main.js"></script>
+        </div>
+        
+    </body>
+</html>

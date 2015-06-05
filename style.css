@@ -5338,7 +5338,7 @@ Template de page : module parallaxe
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  min-height: 250px;
+  min-height: 300px;
   position: relative;
   padding-top: 5%;
   padding-bottom: 5%; }

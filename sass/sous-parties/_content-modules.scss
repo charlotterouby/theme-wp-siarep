@@ -96,6 +96,8 @@ IMAGES & GALLERIES
     height: auto;
 } 
 
+img, iframe, video {max-width: 100%;}
+
 /* dans le corps de texte img à gauche ou à droite habillage de texte flottant*/
 .alignleft {
     @extend .grid-33;

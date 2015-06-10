@@ -24,6 +24,7 @@ $(document).ready(function () {
 	//variable hauteur d'écran
 	var windowHeight = $window.height();
 
+	//Ajouter la class inview quand visible à l'écran
 	$('#slide1, #slide2, #slide3, #slide4, #slide5, #slide6, #slide7, #slide8, #slide9, #slide10, #slide11').bind('inview', function (event, visible) {
 		if (visible === true) {
 			$(this).addClass("inview");
@@ -41,69 +42,69 @@ $(document).ready(function () {
 		//page découvrez-nous
 		if ($firstBG.hasClass("inview")) {
 			$firstBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 1, 0.3)
 			});
 			$carres.css({
-				'backgroundPosition': newPos(18.5, windowHeight, pos, 780, 0.6) + ", " +
-					newPos(28.25, windowHeight, pos, 1000, 0.5) + ", " +
-					newPos(18, windowHeight, pos, 1600, 0.4) + ", " +
-					newPos(26, windowHeight, pos, 1390, 0.3) + ", " +
-					newPos(34, windowHeight, pos, 3000, 0.2) + ", " +
+				'backgroundPosition': newPos(18.5, windowHeight, pos, 740, 0.6) + ", " +
+					newPos(28.25, windowHeight, pos, 970, 0.5) + ", " +
+					newPos(18, windowHeight, pos, 1560, 0.4) + ", " +
+					newPos(26, windowHeight, pos, 1320, 0.3) + ", " +
+					newPos(34, windowHeight, pos, 2900, 0.2) + ", " +
 					newPos(19, windowHeight, pos, 5650, 0.1)
 			});
 		}
 		if ($secondBG.hasClass("inview")) {
 			$secondBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 1780, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 1000, 0.3)
 			});
 		}
 		if ($thirdBG.hasClass("inview")) {
 			$thirdBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 2980, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 2500, 0.3)
 			});
 		}
 		if ($fourthBG.hasClass("inview")) {
 			$fourthBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 4100, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 3300, 0.3)
 			});
 		}
 		if ($fifthBG.hasClass("inview")) {
 			$fifthBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 5000, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 4500, 0.3)
 			});
 		}
 
 		//page nos engagements
 		if ($sixthBG.hasClass("inview")) {
 			$sixthBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, -500, 0.3)
 			});
 		}
 		if ($seventhBG.hasClass("inview")) {
 			$seventhBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 1650, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 600, 0.3)
 			});
 		}
 		if ($eigthBG.hasClass("inview")) {
 			$eigthBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 2600, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.3)
 			});
 		}
 		
 		//page rejoignez-nous
 		if ($ninthBG.hasClass("inview")) {
 			$ninthBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 700, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, -100, 0.3)
 			});
 		}
 		if ($tenthBG.hasClass("inview")) {
 			$tenthBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 1450, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 500, 0.3)
 			});
 		}
 		if ($eleventhBG.hasClass("inview")) {
 			$eleventhBG.css({
-				'backgroundPosition': newPos(50, windowHeight, pos, 2000, 0.3)
+				'backgroundPosition': newPos(50, windowHeight, pos, 1800, 0.3)
 			});
 		}
 	}
@@ -126,11 +127,11 @@ $(document).ready(function () {
 		datasets: [
 			{
 				label: "Evolution annuel du CA en milliers d'euros",
-				fillColor: "rgba(239, 127, 60,0.5)",
-				strokeColor: "rgba(239, 127, 60,0.8)",
-				highlightFill: "rgba(239, 127, 60,0.75)",
-				highlightStroke: "rgba(239, 127, 60,1)",
-				data: [7762, 8813.913, 13207.953, 11424.317, 10184, 13056, 12000.803]
+				fillColor: "rgba(63, 187, 203, 0.5)",
+				strokeColor: "rgba(63, 187, 203, 0.8)",
+				highlightFill: "rgba(63, 187, 203, 0.75)",
+				highlightStroke: "rgba(63, 187, 203, 1)",
+				data: [7521.952, 8813.913, 13207.953, 11424.317, 10184, 13056, 12000.803]
 			}
 		]
 	};
@@ -162,7 +163,7 @@ $(document).ready(function () {
 			value: 40,
 			color: "#9ec419",
 			highlight: "#ecf3da",
-			label: "YTravaux sur l'enveloppe de bâtiment"
+			label: "Travaux sur l'enveloppe de bâtiment"
 		},
 		{
 			value: 1,

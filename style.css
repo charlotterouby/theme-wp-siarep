@@ -5203,22 +5203,26 @@ IMAGES & GALLERIES
   width: 100%;
   height: auto; }
 
+/* line 99, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+img, iframe, video {
+  max-width: 100%; }
+
 /* dans le corps de texte img à gauche ou à droite habillage de texte flottant*/
-/* line 100, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 102, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .alignleft {
   height: auto;
   float: left; }
 
-/* line 106, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 108, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .alignright {
   float: right; }
 
 /* mise en forme de la galerie d'images wordpress*/
-/* line 117, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 119, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .gallery-icon {
   padding: 2%; }
 
-/* line 121, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 123, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .wp-caption-text {
   font-weight: 500;
   font-style: italic;
@@ -5227,12 +5231,12 @@ IMAGES & GALLERIES
 /*------------------------------------------------------------
 .asideUn et .asideDeux 
 ------------------------------------------------------------*/
-/* line 131, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 133, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .asideUn, .asideDeux {
   background-color: #E8E4E2;
   margin: 5% auto;
   padding-bottom: 5%; }
-  /* line 136, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 138, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .asideUn h2, .asideDeux h2 {
     display: block;
     color: #fff;
@@ -5240,46 +5244,46 @@ IMAGES & GALLERIES
     padding: 2%;
     font-size: 2em;
     text-align: center; }
-  /* line 145, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 147, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .asideUn h3, .asideDeux h3 {
     margin-bottom: 2%; }
-  /* line 149, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 151, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .asideUn p, .asideDeux p {
     margin: 0.2em auto; }
-  /* line 153, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 155, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .asideUn ul, .asideDeux ul {
     margin: 2%; }
-  /* line 155, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 157, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .asideUn li, .asideDeux li {
     list-style: square;
     list-style-position: inside;
     padding: 0 4%; }
 
-/* line 164, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 166, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .asideUn h2 {
   background-color: #9EC419; }
-/* line 165, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 167, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .asideUn h3 {
   color: #9EC419; }
 
-/* line 169, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 171, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .asideDeux h2 {
   background-color: #3ebaca; }
-/* line 170, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 172, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .asideDeux h3 {
   color: #3ebaca; }
 
 /*------------------------------------------------------------
 Fil d'Ariane / Breadcrumbs
 ------------------------------------------------------------*/
-/* line 176, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 178, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 #breadcrumbs {
   margin: 1% auto;
   color: black; }
-  /* line 180, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 182, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   #breadcrumbs a {
     color: #4e4797; }
-  /* line 184, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 186, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   #breadcrumbs a:hover {
     color: #3ebaca;
     text-decoration: underline; }
@@ -5287,7 +5291,7 @@ Fil d'Ariane / Breadcrumbs
 /*------------------------------------------------------------
 Boutons
 ------------------------------------------------------------*/
-/* line 195, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 197, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .bouton, .bouton-vert, .searchform input#searchsubmit, .bouton-orange {
   /*TYPO*/
   color: #fff;
@@ -5298,12 +5302,12 @@ Boutons
   padding: 0.5%;
   border-radius: 3px; }
 
-/* line 208, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 210, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .bouton-vert, .searchform input#searchsubmit {
   background-color: #81b15a;
   border: outset 2px #81b15a; }
 
-/* line 214, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 216, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .bouton-orange {
   background-color: #ED9E10;
   border: outset 2px #ED9E10; }
@@ -5311,42 +5315,42 @@ Boutons
 /*------------------------------------------------------------ 
 INDEX + SINGLE : Image à la une + paagraphe de texte
 ------------------------------------------------------------*/
-/* line 223, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 225, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .breve, .resultatArticle {
   margin-top: 3%;
   margin-bottom: 3%; }
-  /* line 227, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 229, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .breve h3, .resultatArticle h3 {
     margin-top: 0;
     margin-bottom: 2%; }
-    /* line 230, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+    /* line 232, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
     .breve h3 a, .resultatArticle h3 a {
       color: inherit;
       font-size: inherit;
       font-weight: inherit;
       text-decoration: none; }
-    /* line 236, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+    /* line 238, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
     .breve h3 a:hover, .resultatArticle h3 a:hover {
       color: #4e4797; }
-  /* line 241, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+  /* line 243, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
   .breve h6, .resultatArticle h6 {
     margin-top: 1%;
     margin-bottom: 2%;
     color: #9EC419; }
 
-/* line 248, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 250, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .resultatArticle img {
   width: 100%;
   height: auto; }
 
-/* line 260, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 262, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .donneurDordres {
   margin: 3% auto; }
 
 /*------------------------------------------------------------ 
 Template de page : module parallaxe
 ------------------------------------------------------------*/
-/* line 267, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 269, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .section-parallax {
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -5357,7 +5361,7 @@ Template de page : module parallaxe
   padding-top: 5%;
   padding-bottom: 5%; }
 
-/* line 278, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 280, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .layer {
   background: #333;
   width: 100%;
@@ -5367,13 +5371,13 @@ Template de page : module parallaxe
   left: 0;
   opacity: 0.6; }
 
-/* line 289, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 291, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .slide_inside h1, .slide_inside h2, .slide_inside h3, .slide_inside h4, .slide_inside h5, .slide_inside h6, .slide_inside p, .slide_inside a {
   color: #fff;
   margin: 0;
   padding: 0;
   position: relative; }
-/* line 296, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 298, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .slide_inside span {
   margin-top: 0;
   margin-bottom: 0;
@@ -5510,7 +5514,7 @@ Page Découvrez-nous
 
 /* line 138, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide1 {
-  background: url(../../images/Avignon_Res-Les-Grands-Cyprès_20140605_0004.jpg) 50% 0 no-repeat fixed;
+  background: url(../../images/Avignon_Res-Les-Grands-Cypres_20140605_0004.jpg) 50% 0 no-repeat fixed;
   padding-top: 0;
   padding-bottom: 0; }
 
@@ -5524,11 +5528,11 @@ Page Découvrez-nous
 
 /* line 148, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide4 {
-  background: url(../../images/Res-Roseraie_20060518_0004.jpg) 50% 0 no-repeat fixed; }
+  background: url(../../images/Vitrolles_piscine-Alex-Jany_20060320_0003.jpg) 50% 0 no-repeat fixed; }
 
 /* line 150, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide5 {
-  background: url(../../images/Arles_amphithéâtre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed; }
+  background: url(../../images/Arles_amphitheatre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed; }
 
 /* line 152, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #bg {
@@ -5552,32 +5556,32 @@ Page Découvrez-nous
 /*------------------------------------------------------------ 
 Page Nos engagements
 ------------------------------------------------------------*/
-/* line 188, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
-#slide6 {
-  background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed; }
-
 /* line 189, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
-#slide7 {
-  background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed; }
+#slide6 {
+  background: url(../../images/Aubagne_musee-de-la-legion-etrangere_20120604_0006.jpg) 50% 0 no-repeat fixed; }
 
-/* line 190, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 191, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#slide7 {
+  background: url(../../images/Aix-en-Provence_amphi-Portalis_2013_0004.jpg) 50% 0 no-repeat fixed; }
+
+/* line 193, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide8 {
-  background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed; }
+  background: url(../../images/Montpellier_Res-Premiere-Pierre_20140612_0003.jpg) 50% 0 no-repeat fixed; }
 
 /*------------------------------------------------------------ 
 Page Rejoignez-nous
 ------------------------------------------------------------*/
-/* line 195, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 199, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide9 {
-  background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed; }
+  background: url(../../images/photo-equipe-2012.jpg) 50% 0 no-repeat fixed; }
 
-/* line 196, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 201, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide10 {
-  background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed; }
+  background: url(../../images/Res-Les-Oliviers_20061205_0001.jpg) 50% 0 no-repeat fixed; }
 
-/* line 197, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 203, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide11 {
-  background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed; }
+  background: url(../../images/Res-Roseraie_20060518_0004.jpg) 50% 0 no-repeat fixed; }
 
 /*! ==========================================================================
    V E. MEDIA QUERIES
@@ -5674,58 +5678,76 @@ CUSTOM MOBILE STYLE
     height: 1px;
     width: 1px; }
   /*--------------------------------------------------
+    TYPO
+    ---------------------------------------------------*/
+  /* line 112, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  h1, .h1 {
+    font-weight: 500;
+    font-size: 2em; }
+  /* line 118, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  h2, .h2, h3, .h3, h4, .h4 {
+    font-weight: 500;
+    font-size: 1.25em; }
+  /* line 124, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  h5, .h5, h6, .h6 {
+    font-weight: normal; }
+  /*--------------------------------------------------
     AUTRES
-    ---------------------------------------------------*/ }
+    ---------------------------------------------------*/
+  /* line 131, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  .h1mobile {
+    text-align: center;
+    font-size: 2.5em; } }
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 120, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 144, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   * {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 129, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 153, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   a, a:visited {
     text-decoration: underline; }
-  /* line 132, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 156, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 135, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 159, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /*
      * Don't show links for images, or javascript/internal links
      */
-  /* line 144, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 168, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: ""; }
-  /* line 148, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 172, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-  /* line 152, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 176, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-  /* line 157, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 181, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   tr, img {
     page-break-inside: avoid; }
-  /* line 160, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 184, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   img {
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
 
-  /* line 168, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 192, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
-  /* line 174, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 198, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   h1, h2, h3 {
     page-break-after: avoid; } }
 

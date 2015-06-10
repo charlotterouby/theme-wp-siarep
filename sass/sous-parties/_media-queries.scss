@@ -126,13 +126,25 @@ CUSTOM MOBILE STYLE
 	}
 	
 	/*--------------------------------------------------
-    AUTRES
+    Page découvrez-nous
     ---------------------------------------------------*/
 	.h1mobile {
 		text-align: center;
 		font-size: 2.5em;
 	}	
 	
+	/*--------------------------------------------------
+    Front-Page
+    ---------------------------------------------------*/
+	.gde-section-parallax{
+		min-height: 400px;
+	}
+}
+
+@media screen and (max-width:400px){
+	.gde-section-parallax{
+		min-height: 300px;
+	}
 }
 
 /* ==========================================================================

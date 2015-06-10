@@ -134,31 +134,32 @@ Page Découvrez-nous
 	font-weight: normal;
 	font-style : italic;
 }
+//http://localhost/siarep/wp-content/uploads/fonds_img/
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1080-6.jpg
 #slide1 {
-	background: url(../../images/Avignon_Res-Les-Grands-Cypres_20140605_0004.jpg) 50% 0 no-repeat fixed;
+	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Avignon_Res-Les-Grands-Cypres_20140605_0004.jpg) 50% 0 no-repeat fixed;
 	padding-top: 0;
 	padding-bottom: 0;
 	}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg
-#slide2 {background: url(../../images/Cannes_Palais-des-festivals_20101210_0009.jpg) 50% 0 no-repeat fixed;}
+#slide2 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Cannes_Palais-des-festivals_20101210_0009.jpg) 50% 0 no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg
-#slide3 {background: url(../../images/Res-Les-Iris_20070521_0002.jpg) 50% 0 no-repeat fixed;}
+#slide3 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Res-Les-Iris_20070521_0002.jpg) 50% 0 no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg
-#slide4 {background: url(../../images/Vitrolles_piscine-Alex-Jany_20060320_0003.jpg) 50% 0 no-repeat fixed;}
+#slide4 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Vitrolles_piscine-Alex-Jany_20060320_0003.jpg) 50% 20% no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-8.jpg
-#slide5 {background: url(../../images/Arles_amphitheatre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed;}
+#slide5 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Arles_amphitheatre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed;}
 
 #bg {
 	position : absolute;
 	height: 100%;
 	background-image: 
-		url(http://localhost/siarep/wp-content/uploads/2015/06/fondS.png), 
-		url(http://localhost/siarep/wp-content/uploads/2015/06/fondI.png), 
-		url(http://localhost/siarep/wp-content/uploads/2015/06/fondR.png), 
-		url(http://localhost/siarep/wp-content/uploads/2015/06/fondA.png),
-		url(http://localhost/siarep/wp-content/uploads/2015/06/fondE.png),
-		url(http://localhost/siarep/wp-content/uploads/2015/06/fondP.png);
+		url(http://localhost/siarep/wp-content/uploads/fonds_img/fondS.png), 
+		url(http://localhost/siarep/wp-content/uploads/fonds_img/fondI.png), 
+		url(http://localhost/siarep/wp-content/uploads/fonds_img/fondR.png), 
+		url(http://localhost/siarep/wp-content/uploads/fonds_img/fondA.png),
+		url(http://localhost/siarep/wp-content/uploads/fonds_img/fondE.png),
+		url(http://localhost/siarep/wp-content/uploads/fonds_img/fondP.png);
 	background-position: 
 		18.5% 6%, //S
 		28.25% 24%, //I
@@ -186,18 +187,35 @@ Page Découvrez-nous
 Page Nos engagements
 ------------------------------------------------------------*/
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg
-#slide6 {background: url(../../images/Aubagne_musee-de-la-legion-etrangere_20120604_0006.jpg) 50% 0 no-repeat fixed;}
+#slide6 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Aubagne_musee-de-la-legion-etrangere_20120604_0006.jpg) 50% 60% no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg
-#slide7 {background: url(../../images/Aix-en-Provence_amphi-Portalis_2013_0004.jpg) 50% 0 no-repeat fixed;}
+#slide7 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Aix-en-Provence_amphi-Portalis_2013_0004.jpg) 50% 0 no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg
-#slide8 {background: url(../../images/Montpellier_Res-Premiere-Pierre_20140612_0003.jpg) 50% 0 no-repeat fixed;}
+#slide8 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Montpellier_Res-Premiere-Pierre_20140612_0003.jpg) 50% 70% no-repeat fixed;}
 
 /*------------------------------------------------------------ 
 Page Rejoignez-nous
 ------------------------------------------------------------*/
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg
-#slide9 {background: url(../../images/photo-equipe-2012.jpg) 50% 0 no-repeat fixed;}
+#slide9 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/photo-equipe-2012.jpg) 50% 50% no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg
-#slide10 {background: url(../../images/Res-Les-Oliviers_20061205_0001.jpg) 50% 0 no-repeat fixed;}
+#slide10 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Res-Les-Oliviers_20061205_0001.jpg) 50% 20% no-repeat fixed;}
 //http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg
-#slide11 {background: url(../../images/Res-Roseraie_20060518_0004.jpg) 50% 0 no-repeat fixed;}
+#slide11 {background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Res-Roseraie_20060518_0004.jpg) 50% 50% no-repeat fixed;}
+
+/*------------------------------------------------------------ 
+Page accueil / Front-page
+------------------------------------------------------------*/
+#homeSlide1{
+	background: url(../../images/slider-grands-cypres.jpg) 60% 50% no-repeat scroll;
+}
+#homeSlide2{
+	background: url(../../images/slider-les-iris.jpg) 70% 50% no-repeat scroll;
+}
+#homeSlide3{
+	background: url(../../images/slider-jules-ferry-192-640.jpg) 75% 60% no-repeat scroll;
+}
+#homeSlide4{
+	background: url(../../images/slider-cannes-1920-640.jpg) 90% 50% no-repeat scroll;
+}
+

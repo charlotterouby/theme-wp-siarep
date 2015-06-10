@@ -5361,7 +5361,18 @@ Template de page : module parallaxe
   padding-top: 5%;
   padding-bottom: 5%; }
 
-/* line 280, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 279, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+.gde-section-parallax {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 640px;
+  position: relative;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+
+/* line 290, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .layer {
   background: #333;
   width: 100%;
@@ -5371,13 +5382,13 @@ Template de page : module parallaxe
   left: 0;
   opacity: 0.6; }
 
-/* line 291, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 301, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .slide_inside h1, .slide_inside h2, .slide_inside h3, .slide_inside h4, .slide_inside h5, .slide_inside h6, .slide_inside p, .slide_inside a {
   color: #fff;
   margin: 0;
   padding: 0;
   position: relative; }
-/* line 298, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
+/* line 308, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-modules.scss */
 .slide_inside span {
   margin-top: 0;
   margin-bottom: 0;
@@ -5512,33 +5523,33 @@ Page Découvrez-nous
   font-weight: normal;
   font-style: italic; }
 
-/* line 138, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 139, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide1 {
-  background: url(../../images/Avignon_Res-Les-Grands-Cypres_20140605_0004.jpg) 50% 0 no-repeat fixed;
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Avignon_Res-Les-Grands-Cypres_20140605_0004.jpg) 50% 0 no-repeat fixed;
   padding-top: 0;
   padding-bottom: 0; }
 
-/* line 144, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 145, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide2 {
-  background: url(../../images/Cannes_Palais-des-festivals_20101210_0009.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Cannes_Palais-des-festivals_20101210_0009.jpg) 50% 0 no-repeat fixed; }
 
-/* line 146, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 147, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide3 {
-  background: url(../../images/Res-Les-Iris_20070521_0002.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Res-Les-Iris_20070521_0002.jpg) 50% 0 no-repeat fixed; }
 
-/* line 148, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 149, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide4 {
-  background: url(../../images/Vitrolles_piscine-Alex-Jany_20060320_0003.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Vitrolles_piscine-Alex-Jany_20060320_0003.jpg) 50% 20% no-repeat fixed; }
 
-/* line 150, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 151, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide5 {
-  background: url(../../images/Arles_amphitheatre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Arles_amphitheatre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed; }
 
-/* line 152, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 153, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #bg {
   position: absolute;
   height: 100%;
-  background-image: url(http://localhost/siarep/wp-content/uploads/2015/06/fondS.png), url(http://localhost/siarep/wp-content/uploads/2015/06/fondI.png), url(http://localhost/siarep/wp-content/uploads/2015/06/fondR.png), url(http://localhost/siarep/wp-content/uploads/2015/06/fondA.png), url(http://localhost/siarep/wp-content/uploads/2015/06/fondE.png), url(http://localhost/siarep/wp-content/uploads/2015/06/fondP.png);
+  background-image: url(http://localhost/siarep/wp-content/uploads/fonds_img/fondS.png), url(http://localhost/siarep/wp-content/uploads/fonds_img/fondI.png), url(http://localhost/siarep/wp-content/uploads/fonds_img/fondR.png), url(http://localhost/siarep/wp-content/uploads/fonds_img/fondA.png), url(http://localhost/siarep/wp-content/uploads/fonds_img/fondE.png), url(http://localhost/siarep/wp-content/uploads/fonds_img/fondP.png);
   background-position: 18.5% 6%, 28.25% 24%, 18% 66%, 26% 40%, 34% 80%, 19% 105%;
   background-attachment: fixed,
 		fixed,
@@ -5556,32 +5567,51 @@ Page Découvrez-nous
 /*------------------------------------------------------------ 
 Page Nos engagements
 ------------------------------------------------------------*/
-/* line 189, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 190, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide6 {
-  background: url(../../images/Aubagne_musee-de-la-legion-etrangere_20120604_0006.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Aubagne_musee-de-la-legion-etrangere_20120604_0006.jpg) 50% 60% no-repeat fixed; }
 
-/* line 191, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 192, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide7 {
-  background: url(../../images/Aix-en-Provence_amphi-Portalis_2013_0004.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Aix-en-Provence_amphi-Portalis_2013_0004.jpg) 50% 0 no-repeat fixed; }
 
-/* line 193, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 194, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide8 {
-  background: url(../../images/Montpellier_Res-Premiere-Pierre_20140612_0003.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Montpellier_Res-Premiere-Pierre_20140612_0003.jpg) 50% 70% no-repeat fixed; }
 
 /*------------------------------------------------------------ 
 Page Rejoignez-nous
 ------------------------------------------------------------*/
-/* line 199, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 200, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide9 {
-  background: url(../../images/photo-equipe-2012.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/photo-equipe-2012.jpg) 50% 50% no-repeat fixed; }
 
-/* line 201, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 202, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide10 {
-  background: url(../../images/Res-Les-Oliviers_20061205_0001.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Res-Les-Oliviers_20061205_0001.jpg) 50% 20% no-repeat fixed; }
 
-/* line 203, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+/* line 204, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
 #slide11 {
-  background: url(../../images/Res-Roseraie_20060518_0004.jpg) 50% 0 no-repeat fixed; }
+  background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Res-Roseraie_20060518_0004.jpg) 50% 50% no-repeat fixed; }
+
+/*------------------------------------------------------------ 
+Page accueil / Front-page
+------------------------------------------------------------*/
+/* line 209, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#homeSlide1 {
+  background: url(../../images/slider-grands-cypres.jpg) 60% 50% no-repeat scroll; }
+
+/* line 212, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#homeSlide2 {
+  background: url(../../images/slider-les-iris.jpg) 70% 50% no-repeat scroll; }
+
+/* line 215, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#homeSlide3 {
+  background: url(../../images/slider-jules-ferry-192-640.jpg) 75% 60% no-repeat scroll; }
+
+/* line 218, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_content-exceptions.scss */
+#homeSlide4 {
+  background: url(../../images/slider-cannes-1920-640.jpg) 90% 50% no-repeat scroll; }
 
 /*! ==========================================================================
    V E. MEDIA QUERIES
@@ -5692,62 +5722,73 @@ CUSTOM MOBILE STYLE
   h5, .h5, h6, .h6 {
     font-weight: normal; }
   /*--------------------------------------------------
-    AUTRES
+    Page découvrez-nous
     ---------------------------------------------------*/
   /* line 131, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   .h1mobile {
     text-align: center;
-    font-size: 2.5em; } }
+    font-size: 2.5em; }
+  /*--------------------------------------------------
+    Front-Page
+    ---------------------------------------------------*/
+  /* line 139, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  .gde-section-parallax {
+    min-height: 400px; } }
+
+@media screen and (max-width: 400px) {
+  /* line 145, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  .gde-section-parallax {
+    min-height: 300px; } }
 
 /* ==========================================================================
    Print styles.
    Inlined to avoid required HTTP connection: h5bp.com/r
    ========================================================================== */
 @media print {
-  /* line 144, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 156, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   * {
     background: transparent !important;
     color: #000 !important;
     /* Black prints faster: h5bp.com/s */
     box-shadow: none !important;
     text-shadow: none !important; }
-  /* line 153, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 165, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   a, a:visited {
     text-decoration: underline; }
-  /* line 156, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 168, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   a[href]:after {
     content: " (" attr(href) ")"; }
-  /* line 159, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 171, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   abbr[title]:after {
     content: " (" attr(title) ")"; }
   /*
      * Don't show links for images, or javascript/internal links
      */
-  /* line 168, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 180, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after {
     content: ""; }
-  /* line 172, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 184, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   pre, blockquote {
     border: 1px solid #999;
     page-break-inside: avoid; }
-  /* line 176, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 188, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   thead {
     display: table-header-group;
     /* h5bp.com/t */ }
-  /* line 181, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 193, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   tr, img {
     page-break-inside: avoid; }
-  /* line 184, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 196, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   img {
     max-width: 100% !important; }
   @page {
     margin: 0.5cm; }
 
-  /* line 192, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 204, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   p, h2, h3 {
     orphans: 3;
     widows: 3; }
-  /* line 198, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
+  /* line 210, E:/Documents/LP Création Web/stage SIAREP/theme-wp-siarep/sass/sous-parties/_media-queries.scss */
   h1, h2, h3 {
     page-break-after: avoid; } }
 

@@ -271,7 +271,17 @@ Template de page : module parallaxe
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-	min-height: 300px; //sur mobile 150px ?
+	min-height: 300px;
+	position:relative;
+	padding-top: 5%;
+	padding-bottom: 5%;
+}
+.gde-section-parallax {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	min-height: 640px;
 	position:relative;
 	padding-top: 5%;
 	padding-bottom: 5%;

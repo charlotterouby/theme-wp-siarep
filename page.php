@@ -12,7 +12,7 @@
     ?>
     
 <!-- contenu principal -->
-<main class="push-5 grid-90">
+<main class="push-5 grid-90 contenu-principal">
 <?php if(have_posts()) : while (have_posts()) : the_post(); ?>
     <div id="page">
         <h1><?php the_title(); ?></h1>

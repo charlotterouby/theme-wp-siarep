@@ -1,6 +1,7 @@
 <?php
 // Enregistrement des scripts
 function theme_js(){
+	wp_enqueue_script('jquery');
 	wp_enqueue_script('jquery.parallax', 
 					  get_template_directory_uri().'/js/jquery.parallax-1.1.3.js',
 					  array('jquery'),
@@ -10,13 +11,13 @@ function theme_js(){
 	wp_enqueue_script('jquery.inview',
 					  get_template_directory_uri().'/js/jquery.inview.js',
 					  array('jquery'),
-					  false,
+					  '',
 					  true
 	);
 	wp_enqueue_script('jquery.countTo',
 					  get_template_directory_uri().'/js/jquery.countTo.js',
 					  array('jquery'),
-					  false,
+					  '',
 					  true
 	);
 	wp_enqueue_script('jquery.localscroll',
@@ -31,16 +32,16 @@ function theme_js(){
 					  '1.4.2',
 					  true
 	);
-	wp_enqueue_script('googleMapsAPI',
-					  'https://maps.googleapis.com/maps/api/js?v=3.exp&sensor=false',
+	wp_enqueue_script('Chart',
+					  get_template_directory_uri().'/js/chart.js',
 					  array(),
-					  false,
+					  '',
 					  true
 	);
 	wp_enqueue_script('main',
 					  get_template_directory_uri().'/js/main.js',
-					  array('jquery','jquery.parallax', 'jquery.inview','googleMapsAPI'),
-					  false,
+					  array('jquery','jquery.parallax', 'jquery.inview', 'Chart'),
+					  '',
 					  true
 	);
 }

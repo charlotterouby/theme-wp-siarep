@@ -114,6 +114,7 @@ Page Découvrez-nous
 .textPromo {
 	padding-top: 5%;
 	padding-bottom: 5%;
+	margin : 0;
 }
 
 #S, #R {
@@ -133,34 +134,38 @@ Page Découvrez-nous
 	font-weight: normal;
 	font-style : italic;
 }
-
+//http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1080-6.jpg
 #slide1 {
-	background: url(../../images/city-q-c-1920-1080-6.jpg) 50% 0 no-repeat fixed;
+	background: url(../../images/Avignon_Res-Les-Grands-Cyprès_20140605_0004.jpg) 50% 0 no-repeat fixed;
 	padding-top: 0;
 	padding-bottom: 0;
 	}
-#slide2 {background: url(../../images/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed;}
-#slide3 {background: url(../../images/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed;}
-#slide4 {background: url(../../images/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed;}
-#slide5 {background: url(../../images/city-q-c-1920-1280-8.jpg) 50% 0 no-repeat fixed;}
+//http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg
+#slide2 {background: url(../../images/Cannes_Palais-des-festivals_20101210_0009.jpg) 50% 0 no-repeat fixed;}
+//http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg
+#slide3 {background: url(../../images/Res-Les-Iris_20070521_0002.jpg) 50% 0 no-repeat fixed;}
+//http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg
+#slide4 {background: url(../../images/Res-Roseraie_20060518_0004.jpg) 50% 0 no-repeat fixed;}
+//http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-8.jpg
+#slide5 {background: url(../../images/Arles_amphithéâtre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed;}
 
 #bg {
 	position : absolute;
 	height: 100%;
 	background-image: 
-		url(../../images/fondS.png), 
-		url(../../images/fondI.png), 
-		url(../../images/fondR.png), 
-		url(../../images/fondA.png),
-		url(../../images/fondE.png),
-		url(../../images/fondP.png);
+		url(http://localhost/siarep/wp-content/uploads/2015/06/fondS.png), 
+		url(http://localhost/siarep/wp-content/uploads/2015/06/fondI.png), 
+		url(http://localhost/siarep/wp-content/uploads/2015/06/fondR.png), 
+		url(http://localhost/siarep/wp-content/uploads/2015/06/fondA.png),
+		url(http://localhost/siarep/wp-content/uploads/2015/06/fondE.png),
+		url(http://localhost/siarep/wp-content/uploads/2015/06/fondP.png);
 	background-position: 
-		18.5% 0%, //S
-		28.25% 18%, //I
-		18% 58.5%, //R
-		26% 34%, //A
-		34% 71.75%, //E
-		19% 99%; //P
+		18.5% 6%, //S
+		28.25% 24%, //I
+		18% 66%, //R
+		26% 40%, //A
+		34% 80%, //E
+		19% 105%; //P
 	background-attachment: 
 		fixed,
 		fixed,
@@ -180,6 +185,13 @@ Page Découvrez-nous
 /*------------------------------------------------------------ 
 Page Nos engagements
 ------------------------------------------------------------*/
-#slide6 {background: url(../../images/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed;}
-#slide7 {background: url(../../images/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed;}
-#slide8 {background: url(../../images/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed;}
+#slide6 {background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed;}
+#slide7 {background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed;}
+#slide8 {background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed;}
+
+/*------------------------------------------------------------ 
+Page Rejoignez-nous
+------------------------------------------------------------*/
+#slide9 {background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1200-4.jpg) 50% 0 no-repeat fixed;}
+#slide10 {background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-1.jpg) 50% 0 no-repeat fixed;}
+#slide11 {background: url(http://localhost/siarep/wp-content/uploads/2015/06/city-q-c-1920-1280-10.jpg) 50% 0 no-repeat fixed;}

@@ -10,40 +10,60 @@ body {
 h1, .h1 { 
     font-weight: bold;
     font-size: 2.5em;
-    color: $orange;}
+    color: $orange;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
 
 h2, .h2 {
     font-weight: bold;
     font-size: 1.75em;
-    color: $vert ;}
+    color: $vert ;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
 
 h3, .h3 {
     font-weight: bold;
     font-size: 1.5em;
-    color: $orangeMoyen;}
+    color: $orangeMoyen;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
 
 h4, .h4 {
     font-weight: bold;
     font-size: 1.33em;
-    color: $orangeFonce;}
+    color: $orangeFonce;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
 
 h5, .h5 {
     font-weight: 500;
     font-size: 1.25em;
     font-style: italic;
-    color: $gris;}
+    color: $gris;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
 
 h6, .h6 {
     font-weight: 500;
     font-size: 1em;
-    color: $gris;}
+    color: $gris;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
+}
 
 p {
     font-weight: normal;
     font-size: 1em;
     line-height: 1.5em;
+	padding-top: 0.25em;
+	padding-bottom: 0.25em;
     a {
-        font-weight: normal;
+        font-weight: 500;
         font-size: 1em;
         color: $bleuFonce;
     }

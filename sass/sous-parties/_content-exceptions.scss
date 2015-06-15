@@ -121,6 +121,19 @@ Page Découvrez-nous
 	background-color: $grisPastel;
 }
 
+//-------------------- Légende du graph Doughnut --------------------
+ul.doughnut-legend {
+	li {
+		list-style: none;
+		padding: 0;
+		line-height: 2em;
+		span {
+			padding: 0.25em 0.75em;
+			margin: 2%;
+		}
+	}
+}
+
 //-------------------- Bannière entête --------------------
 #S,
 #R {
@@ -162,11 +175,11 @@ Page Découvrez-nous
 }
 
 #slide4 {
-	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Vitrolles_piscine-Alex-Jany_20060320_0003.jpg) 50% 20% no-repeat fixed;
+	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Marseille_cite-universitaire-Delormes_20131210_0003.jpg) 50% 20% no-repeat fixed;
 }
 
 #slide5 {
-	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Arles_amphitheatre-antique_20150420_0004.jpg) 50% 0 no-repeat fixed;
+	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/amphi-arles-couchant.jpg) 50% 0 no-repeat fixed;
 }
 
 #bg {
@@ -185,6 +198,9 @@ Page Découvrez-nous
 /*------------------------------------------------------------ 
 Page Nos engagements
 ------------------------------------------------------------*/
+#engagementSocial{background-color: $orangePastel;}
+
+#ecologie{background-color: $vertPastel;}
 
 #slide6 {
 	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/Aubagne_musee-de-la-legion-etrangere_20120604_0006.jpg) 50% 60% no-repeat fixed;
@@ -200,6 +216,9 @@ Page Nos engagements
 /*------------------------------------------------------------ 
 Page Rejoignez-nous
 ------------------------------------------------------------*/
+#edito, s#metiers{background-color: $blanc;}
+
+#candidature{background-color: $grisPastel;}
 
 #slide9 {
 	background: url(http://localhost/siarep/wp-content/uploads/fonds_img/photo-equipe-2012.jpg) 50% 50% no-repeat fixed;

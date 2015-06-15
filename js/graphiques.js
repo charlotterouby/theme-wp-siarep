@@ -1,25 +1,3 @@
-//Données de l'histogramme CA 2008-2014
-var dataBar = {
-	labels: ["2008", "2009", "2010", "2011", "2012", "2013", "2014"],
-	datasets: [
-		{
-			label: "Evolution annuel du CA en milliers d'euros",
-			fillColor: "rgba(63, 187, 203, 0.5)",
-			strokeColor: "rgba(63, 187, 203, 0.8)",
-			highlightFill: "rgba(63, 187, 203, 0.75)",
-			highlightStroke: "rgba(63, 187, 203, 1)",
-			data: [7521.952, 8813.913, 13207.953, 11424.317, 10184, 13056, 12000.803]
-			}
-		]
-};
-//Identification du context du graphique
-var canvashisto = document.getElementById('CAannuel');
-var ctxBar = canvashisto.getContext('2d');
-var myBarChart = new Chart(ctxBar).Bar(dataBar, {
-	responsive: true,
-	scaleShowVerticalLines: false
-});
-
 //Données du Doughnut CA par secteur d'activité
 var dataPie = [
 	{
@@ -58,5 +36,9 @@ var dataPie = [
 var ctxPie = document.getElementById('CAactivite').getContext('2d');
 var myDoughnutChart = new Chart(ctxPie).Doughnut(dataPie, {
 	responsive: true,
-	animateScale: true
+	animateScale: true,
+	tooltipTemplate: "<%if (label){%><%=label%> : <%}%><%= value %>%",
+	legendTemplate : "<ul class=\"<%=name.toLowerCase()%>-legend\"><% for (var i=0; i<segments.length; i++){%><li><span style=\"background-color:<%=segments[i].fillColor%>\"></span><%if(segments[i].label){%><%=segments[i].label%> : <%=segments[i].value%>%<%}%></li><%}%></ul>"
 });
+//Création de la légende du graphique
+document.getElementById("legendPie").innerHTML = myDoughnutChart.generateLegend();

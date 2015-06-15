@@ -27,7 +27,7 @@
 		<!-- logo -->
 		<div id="logo" class="hide-on-mobile grid-20">
 			<a class="home-link" href="" title="Siarep" rel="home">
-				<img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo">
+				<img src="../../images/logo.png" alt="logo">
 			</a>
 		</div>
 
@@ -104,22 +104,37 @@
 
 	<!-- contenu principal-->
 	<main id="front-page" class="grid-100 grid-parent">
-		<div class="welcome section grid-100 grid-parent">
-			<div class="slides grid-100 grid-parent">
-				<!-- diapo 1 -->
-				<div id="homeSlide1" class="gde-section-parallax grid-100 grid-parent">
-					<div class="slide_inside grid-50 prefix-15">
-						<h1>SIAREP, spécialiste de l'Enveloppe de bâtiment</h1>
-					</div>
-				</div>
-				
-				<!-- navigation du carousel -->
-				<ul class="slide-nav grid-100">
-					<li><a class="prev" href="#">Previous</a>
-					</li>
-					<li><a class="next" href="#">Next</a>
-					</li>
-				</ul>
+
+		<div id="slideshow" class="grid-100 grid-parent hide-on-mobile">
+			<!-- conteneur slider -->
+			<ul id="sContent">
+
+				<li class="homeSlide">
+					<img src="../images/slider-cannes-1920-640.jpg" alt="Chantier du palais des festivals de Cannes" />
+					<div class="bg"></div>
+					<h2 class="h1 grid-50">SIAREP 45 ans d'expérience de l'enveloppe du bâtiment</h2>
+
+				</li>
+
+				<li class="homeSlide">
+					<img src="../images/slider-grands-cypres.jpg" alt="Chantier de la Résidence des Grands Cyprès à Avignon" />
+					<div class="bg"></div>
+					<h2 class="h1 grid-50">Gagner en qualité architecturale</h2>
+				</li>
+
+				<li class="homeSlide">
+					<img src="../images/slider-jules-ferry-192-640.jpg" alt="Chantier du lycée Jules Ferry de Montpellier" />
+					<div class="bg"></div>
+					<h2 class="h1 grid-50">Une force régionale à votre service</h2>
+				</li>
+
+			</ul>
+		</div>
+
+		<div id="homeSlide4" class="gde-section-image grid-100 grid-parent hide-on-desktop">
+			<div class="homeSlide mobile-grid-100 grid-parent">
+				<div class="bgmobile mobile-grid-100 grid-paent"></div>
+				<h2 class="h1 mobile-grid-75">SIAREP spécialiste de l'enveloppe de bâtiment</h2>
 			</div>
 		</div>
 	</main>
@@ -128,8 +143,6 @@
 		<div id="menuFooter" class="grid-100 menuHorizontal"></div>
 	</footer>
 	<!-- fin #conteneur -->
-
-
 </body>
 
 </html>

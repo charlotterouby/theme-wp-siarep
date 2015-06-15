@@ -13,20 +13,27 @@ CUSTOM MOBILE STYLE
 	/* Theming opened nav */
 	
 	.menuVertical {
+		a:hover,
+		a:focus,
+		a:active {
+			background: $grisPastel;
+			color: $bleuFonce;
+		}
+
 		ul {
-			/* translate with hardware acceleration */
-			
-			-webkit-transform: translateZ(0);
-			-ms-transform: translateZ(0);
-			transform: translateZ(0);
-			-webkit-transition: max-height .4s;
-			transition: max-height .4s;
-			will-change: max-height;
 			/* global styles */
-			
 			margin: 0;
 			padding: 0;
 			list-style: none;
+			-webkit-transition: max-height .4s;
+			transition: max-height .4s;
+
+			/* translate with hardware acceleration */
+			-webkit-transform: translateZ(0);
+			-ms-transform: translateZ(0);
+			transform: translateZ(0);
+
+			will-change: max-height;
 		}
 		li {
 			border: 1px $vert;
@@ -40,50 +47,60 @@ CUSTOM MOBILE STYLE
 			font-size: 1.1em;
 			line-height: 1.5em;
 		}
-		a:hover,
-		a:focus,
-		a:active {
-			background: $grisPastel;
-			color: $bleuFonce;
-		}
 		.sub-menu {
+			border-left: 2px solid $gris;
+
 			@extend .mobile-grid-95;
 			@extend .mobile-push-5;
 			@extend .grid-parent;
-			border-left: 2px solid $gris;
 		}
 	}
 	/* Theming closed nav */
 	
 	nav.is-closed ul {
-		max-height: 0;
 		overflow: hidden;
+
+		max-height: 0;
 	}
 	/* Global styling nav button */
 	
 	nav > button {
-		display: block;
 		position: absolute;
 		top: 2%;
 		right: 5%;
 		z-index: 1;
-		height: 6%;
-		width: 15%;
-		background-color: transparent;
-		background-image: -webkit-gradient(linear, left top, right top, from(#968881), to(#968881)), -webkit-gradient(linear, left top, right top, from(#968881), to(#968881)), -webkit-gradient(linear, left top, right top, from(#968881), to(#968881));
-		background-image: -webkit-linear-gradient(left, #968881, #968881), -webkit-linear-gradient(left, #968881, #968881), -webkit-linear-gradient(left, #968881, #968881);
-		background-image: linear-gradient(to right, #968881, #968881), linear-gradient(to right, #968881, #968881), linear-gradient(to right, #968881, #968881);
-		background-position: center top, center, center bottom;
-		background-repeat: no-repeat;
-		-webkit-background-size: 100% 20%;
-		background-size: 100% 20%;
+
+		display: block;
 		padding: 0;
+		width: 15%;
+		height: 6%;
 		outline: 0;
 		border: 0;
+		background-color: transparent;
+		background-image: 
+			-webkit-gradient(linear, left top, right top, from(#968881), to(#968881)), 
+			-webkit-gradient(linear, left top, right top, from(#968881), to(#968881)), 
+			-webkit-gradient(linear, left top, right top, from(#968881), to(#968881));
+		background-image: 
+			-webkit-linear-gradient(left, #968881, #968881), 
+			-webkit-linear-gradient(left, #968881, #968881), 
+			-webkit-linear-gradient(left, #968881, #968881);
+		background-image: 
+			-webkit-linear-gradient(left, #968881, #968881), 
+			-webkit-linear-gradient(left, #968881, #968881), 
+			-webkit-linear-gradient(left, #968881, #968881);
+		background-image: 
+			linear-gradient(to right, #968881, #968881), 
+			linear-gradient(to right, #968881, #968881), 
+			linear-gradient(to right, #968881, #968881);
+		background-position: center top, center, center bottom;
+		background-size: 100% 20%;
+		background-repeat: no-repeat;
 		cursor: pointer;
-		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 		-webkit-transition: .2s;
 		transition: .2s;
+
+		-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 	}
 	/*  Removing Firefox's dotted outline on button */
 	
@@ -93,18 +110,19 @@ CUSTOM MOBILE STYLE
 	/* Theming opened nav button */
 	
 	nav:not(.is-closed) > button {
+		background-position: center, center, center;
+
 		-webkit-transform: rotate(180deg) translateZ(0);
 		transform: rotate(180deg) translateZ(0);
-		background-position: center, center, center;
 	}
 	/* Hide alternate text except from screen readers */
 	
 	.visually-hidden {
 		position: absolute !important;
-		clip: rect(1px, 1px, 1px, 1px);
 		overflow: hidden;
-		height: 1px;
+		clip: rect(1px, 1px, 1px, 1px);
 		width: 1px;
+		height: 1px;
 	}
 	/*--------------------------------------------------
     TYPO
@@ -129,23 +147,33 @@ CUSTOM MOBILE STYLE
     Page découvrez-nous
     ---------------------------------------------------*/
 	.h1mobile {
+		top : 30px;
+		left : 20px;
+		padding: 2%;
 		text-align: center;
-		font-size: 2.5em;
+		text-transform: uppercase;
+		font-size: 2em;
+		background-image: 
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondMobileS.jpg),
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondMobileI.jpg),
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondMobileA.jpg),
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondMobileR.jpg),
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondMobileE.jpg),
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondMobileP.jpg),
+		;
+		background-position : 
+			25% 2%,
+			10% 22%,
+			12% 40%,
+			22% 60%,
+			25% 80%,
+			25% 98%,
+		;
+		background-repeat : no-repeat;
 	}	
 	
-	/*--------------------------------------------------
-    Front-Page
-    ---------------------------------------------------*/
-	.gde-section-parallax{
-		min-height: 400px;
-	}
 }
 
-@media screen and (max-width:400px){
-	.gde-section-parallax{
-		min-height: 300px;
-	}
-}
 
 /* ==========================================================================
    Print styles.
@@ -155,10 +183,9 @@ CUSTOM MOBILE STYLE
 @media print {
 	* {
 		background: transparent !important;
-		color: #000 !important;
 		/* Black prints faster: h5bp.com/s */
-		
 		box-shadow: none !important;
+		color: #000 !important;
 		text-shadow: none !important;
 	}
 	a,

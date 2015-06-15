@@ -264,7 +264,17 @@ INDEX + SINGLE : Image à la une + paagraphe de texte
 }
 
 /*------------------------------------------------------------ 
-Template de page : module parallaxe
+Template de page statique : module texte
+------------------------------------------------------------*/
+
+.textPromo {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin : 0;
+}
+
+/*------------------------------------------------------------ 
+Template de page statique : module parallaxe
 ------------------------------------------------------------*/
 .section-parallax {
 	-webkit-background-size: cover;
@@ -276,26 +286,7 @@ Template de page : module parallaxe
 	padding-top: 5%;
 	padding-bottom: 5%;
 }
-.gde-section-parallax {
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-	min-height: 640px;
-	position:relative;
-	padding-top: 5%;
-	padding-bottom: 5%;
-}
 
-.layer {
-  background:#333;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0.6;
-}
 
 .slide_inside {
 	h1, h2, h3, h4, h5, h6, p, a {

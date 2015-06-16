@@ -33,7 +33,8 @@ var dataPie = [
 	];
 
 //Contexte du graphique
-var ctxPie = document.getElementById('CAactivite').getContext('2d');
+var canvas = document.getElementById('CAactivite');
+var ctxPie = canvas.getContext('2d');
 var myDoughnutChart = new Chart(ctxPie).Doughnut(dataPie, {
 	responsive: true,
 	animateScale: true,

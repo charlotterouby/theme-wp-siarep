@@ -172,8 +172,34 @@ CUSTOM MOBILE STYLE
 		background-repeat : no-repeat;
 	}	
 	
+	/*--------------------------------------------------
+    Page accueil
+    ---------------------------------------------------*/
+	.homeSlide{
+		position: relative;
+		height: 100%;
+		.bgmobile {
+			position: absolute;
+			height: 100%;
+			background-image:
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondVert-75.png),
+			url(http://localhost/siarep/wp-content/uploads/fonds_img/fondOrange-75.png);
+		background-position: 5% 70%, 90% 45% ;
+		background-repeat: no-repeat, no-repeat;
+		}
+		.h1 {
+			top: 50%;
+		}
+	}
 }
 
+@media screen and (min-width: 768px) {
+	.homeSlide{
+		.h1 {
+			bottom: 10%;
+		}
+	}
+}
 
 /* ==========================================================================
    Print styles.

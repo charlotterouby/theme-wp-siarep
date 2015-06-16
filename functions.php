@@ -29,19 +29,7 @@ if ( function_exists('register_nav_menus')) {
 
 //Enregistrements des emplacements Widgets
 if(function_exists('register_sidebar')) {
-    
-    register_sidebar(
-        array(
-            'id'=>'home',
-            'name'=>'Page accueil',
-            'description'=>'Widgets de la page accueil',
-            'before_widget'=>'<div class="grid-100 grid-parent">',
-            'after_widget'=>'</div>',
-            'before_title'=>'<h2 class="clear">',
-            'after_title'=>'</h2>'
-        )
-    );
-    
+       
     register_sidebar(
         array(
             'id'=>'banner',
@@ -70,6 +58,12 @@ if(function_exists('register_sidebar')) {
 //Enregistrement utilisation des images à la Une
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size(150, 150);
+
+//Tailles d'images personnalisée
+if(function_exists('add_image_size')){
+	add_image_size('Bannière', 1920, 300, true);
+	add_image_size('Diaporama', 1920, 700, true);
+}
 
 // Filtre widget Nuage de tags
 function custom_tag_cloud($args) {

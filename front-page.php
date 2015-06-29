@@ -7,21 +7,21 @@
 		<!-- conteneur slider -->
 		<ul id="sContent">
 
-			<li class="homeSlide">
-				<img src="http://localhost/siarep/wp-content/uploads/fonds_img/slider-cannes-1920-640.jpg" alt="Chantier du palais des festivals de Cannes" />
+			<li class="homeSlide grid-33 grid-parent">
+				<img src="http://www.siarep-btp.com/wp-content/themes/theme-siarep/images/slider-cannes-1920-640.jpg" alt="Chantier du palais des festivals de Cannes" />
 				<div class="bg"></div>
 				<h2 class="h1 grid-50">SIAREP 45 ans d'expérience de l'enveloppe du bâtiment</h2>
 
 			</li>
 
-			<li class="homeSlide">
-				<img src="http://localhost/siarep/wp-content/uploads/fonds_img/slider-grands-cypres.jpg" alt="Chantier de la Résidence des Grands Cyprès à Avignon" />
+			<li class="homeSlide grid-33 grid-parent">
+				<img src="http://www.siarep-btp.com/wp-content/themes/theme-siarep/images/slider-grands-cypres.jpg" alt="Chantier de la Résidence des Grands Cyprès à Avignon" />
 				<div class="bg"></div>
 				<h2 class="h1 grid-50">Gagner en qualité architecturale</h2>
 			</li>
 
-			<li class="homeSlide">
-				<img src="http://localhost/siarep/wp-content/uploads/fonds_img/slider-jules-ferry-192-640.jpg" alt="Chantier du lycée Jules Ferry de Montpellier" />
+			<li class="homeSlide grid-33 grid-parent">
+				<img src="http://www.siarep-btp.com/wp-content/themes/theme-siarep/images/slider-jules-ferry-192-640.jpg" alt="Chantier du lycée Jules Ferry de Montpellier" />
 				<div class="bg"></div>
 				<h2 class="h1 grid-50">Une force régionale à votre service</h2>
 			</li>
@@ -29,7 +29,7 @@
 		</ul>
 	</div>
 
-	<div id="homeSlide4" class="gde-section-image grid-100 grid-parent hide-on-desktop">
+	<div id="homeSlide3" class="gde-section-image grid-100 grid-parent hide-on-desktop">
 		<div class="homeSlide mobile-grid-100 grid-parent">
 			<div class="bgmobile mobile-grid-100 grid-paent"></div>
 			<h2 class="h1 mobile-grid-75">SIAREP spécialiste de l'enveloppe de bâtiment</h2>

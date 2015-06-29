@@ -13,7 +13,7 @@
                 &mdash; <?php wp_title("", true); ?>
             <?php endif; ?>
         </title>
-        <link rel="shortcut icon" href="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/favicon.ico" alt="favicon"/>
+        <link rel="shortcut icon" href="http://www.siarep-btp.com/wp-content/themes/theme-siarep/images/favicon.ico" alt="favicon"/>
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url') ?>" type="text/css" media="screen" />
@@ -38,7 +38,7 @@
                        href="<?php echo esc_url( home_url( '/' ) ); ?>" 
                        title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" 
                        rel="home">
-                        <img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo"/>
+                        <img src="http://www.siarep-btp.com/wp-content/themes/theme-siarep/images/logo.png" alt="logo"/>
                     </a>
                 </div>
                 
@@ -66,7 +66,7 @@
                        href="<?php echo esc_url( home_url( '/' ) ); ?>" 
                        title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" 
                        rel="home">
-                        <img src="http://localhost/siarep/wp-content/themes/theme-wp-siarep/images/logo.png" alt="logo"/>
+                        <img src="http://www.siarep-btp.com/wp-content/themes/theme-siarep/images/logo.png" alt="logo"/>
                     </a>
                 </div>
                 
